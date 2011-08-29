@@ -1,0 +1,115 @@
+<div class="home-wrapper">
+    <div class="home-all">
+        <div class="home" id="home">
+            <div class="home-menu" >
+                <?php if(!empty($this->acl->resources["admin-asset"])):
+                ?>
+                <div class="home-menu-element home-menu-manage">
+                    <a href="/asset" ><img src="<?php echo $this->staticRepo;?>/img/home/manage.png"  /></a>
+                    <a class="home-menu-element-title" href="/asset" >MANAGE</a>
+                    <a href="/asset" ><label class=" home-menu-element-description">Manage and edit your videos. Visualize previews, edit video data, insert tags and metadata, choose encoding profiles and insert subtitles.</label></a>
+                </div>
+                <?php else:?>
+                <div class="home-menu-element home-menu-manage" onClick="alert('This account is not allowed to enter in this section');">
+                    <img src="<?php echo $this->staticRepo;?>/img/home/manage.png"  />
+                    <label class=" home-menu-element-title" >MANAGE</label>
+                    <label class=" home-menu-element-description">Manage and edit your videos. Visualize previews, edit video data, insert tags and metadata, choose encoding profiles and insert subtitles.</label>
+                </div>
+                <?php endif;?>
+
+                <?php if(!empty($this->acl->resources["admin-playlist"])):
+                ?>
+                <div class="home-menu-element home-menu-program" >
+                    <a href="/playlist"><img src="<?php echo $this->staticRepo;?>/img/home/program.png" /></a>
+                    <a href="/playlist" class=" home-menu-element-title">PROGRAM</a>
+                    <a href="/playlist"><label class=" home-menu-element-description">Create, edit and manage playlists. Organize your playlists in categories and subcategories assigning specific metadata to each one.</label></a>
+                </div>
+                <?php else:?>
+                <div class="home-menu-element home-menu-program" onClick="alert('This account is not allowed to enter in this section');">
+                    <img src="<?php echo $this->staticRepo;?>/img/home/program.png" />
+                    <label class=" home-menu-element-title">PROGRAM</label>
+                    <label class=" home-menu-element-description">Create, edit and manage playlists. Organize your playlists in categories and subcategories assigning specific metadata to each one.</label>
+                </div>
+                <?php endif;?>
+
+                <?php if(!empty($this->acl->resources["admin-player"])):
+                ?>
+                <div class="home-menu-element home-menu-player">
+                    <a href="/player"><img src="<?php echo $this->staticRepo;?>/img/home/player.png" /></a>
+                    <a href="/player" class=" home-menu-element-title">PLAYER</a>
+                    <a href="/player"><label class=" home-menu-element-description">Style and brand video player. Configure size, customize colors, choose controls and upload you own logo.</label></a>
+                </div>
+                <?php else:?>
+                <div class="home-menu-element home-menu-player" onClick="alert('This account is not allowed to enter in this section');">
+                    <img src="<?php echo $this->staticRepo;?>/img/home/player.png" />
+                    <label class=" home-menu-element-title">PLAYER</label>
+                    <label class=" home-menu-element-description">Style and brand video player. Configure size, customize colors, choose controls and upload you own logo.</label>
+                </div>
+                <?php endif;?>
+
+                <?php if(!empty($this->acl->resources["admin-site"])):
+                ?>
+                <div class="home-menu-element home-menu-site">
+                    <a href="/site"><img src="<?php echo $this->staticRepo;?>/img/home/site.png" /></a>
+                    <a href="/site" class=" home-menu-element-title">SITE</a>
+                    <a href="/site"><label class=" home-menu-element-description">Manage templates and sites. Choose from a selection of templates and decide site for your player including mobile and web tv.</label></a>
+                </div>
+                <?php else:?>
+                <div class="home-menu-element home-menu-site" onClick="alert('This account is not allowed to enter in this section');">
+                    <img src="<?php echo $this->staticRepo;?>/img/home/site.png" />
+                    <label class=" home-menu-element-title">SITE</label>
+                    <label class=" home-menu-element-description">Manage templates and sites. Choose from a selection of templates and decide site for your player including mobile and web tv.</label>
+                </div>
+                <?php endif;?>
+
+                <?php if(!empty($this->acl->resources["admin-process"])):
+                ?>
+                <div class="home-menu-element home-menu-process">
+                    <a href="/process"><img src="<?php echo $this->staticRepo;?>/img/home/process.png" /></a>
+                    <a href="/process" class="home-menu-element-title">PROCESS</a>
+                    <a href="/process"><label class=" home-menu-element-description">Encoding history and process. Review what encoding processes are running. Review encoding history and recode videos.</label></a>
+                </div>
+                <?php else:?>
+                <div class="home-menu-element home-menu-process" onClick="alert('This account is not allowed to enter in this section');">
+                    <img src="<?php echo $this->staticRepo;?>/img/home/process.png" />
+                    <label class=" home-menu-element-title">PROCESS</label>
+                    <label class=" home-menu-element-description">Encoding history and process. Review what encoding processes are running. Review encoding history and recode videos.</label>
+                </div>
+                <?php endif;?>
+
+                <?php if(!empty($this->acl->resources["admin-connector"])):
+                ?>
+                <div class="home-menu-element home-menu-connector">
+                    <a href="/connector"><img src="<?php echo $this->staticRepo;?>/img/home/connector.png" /></a>
+                    <a href="/connector" class="home-menu-element-title">CONNECTOR</a>
+                    <a href="/connector"><label class=" home-menu-element-description">Social connectors. Configure YouTube, Facebook, Twitter and more connectors for one-click publishing in social networks.</label></a>
+                </div>
+                <?php else:?>
+                <div class="home-menu-element home-menu-connector" onClick="alert('This account is not allowed to enter in this section');">
+                    <img src="<?php echo $this->staticRepo;?>/img/home/connector.png" />
+                    <label class=" home-menu-element-title">CONNECTOR</label>
+                    <label class=" home-menu-element-description">Social connectors. Configure YouTube, Facebook, Twitter and more connectors for one-click publishing in social networks.</label>
+                </div>
+                <?php endif;?>
+            </div>
+            <div class="home-right">
+                <div class="home-right-getting">
+                    <label class="home-right-title1">Getting Started</label>
+                    <label class="home-right-description">New to Hollybyte? Follow our user manual to  getting started.</label>
+                    <img src="<?php echo $this->staticRepo;?>/img/home/manual.png" title="The manual">
+                    <a href=#><img src="<?php echo $this->staticRepo;?>/img/home/btn_pdf.png" class="home-right-getting-pdf"></a>
+                </div>
+                <div class="home-right-info">
+                    <label class="home-right-title2">Developers</label>
+                    <label class="home-right-description">New to Hollybyte? Follow our user manual to  getting started.</label>
+                    <hr color="#DBE8FF"/>
+                    <label class="home-right-title2">Partners</label>
+                    <label class="home-right-description">New to Hollybyte? Follow our user manual to  getting started.</label>
+                </div>
+            </div>
+        </div>
+        <!-- cierre home -->
+    </div>
+    <!-- cierre home-all -->
+</div>
+<!-- cierre home-wrapper -->

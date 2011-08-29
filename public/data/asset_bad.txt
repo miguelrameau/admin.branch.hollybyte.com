@@ -1,0 +1,186 @@
+{ 
+"_id" : ObjectId("4d89f46d492d4c0453000000"), 
+"type" : "VIDEO", 
+"name" : "kite_fail.mp4", 
+"pub" : false, 
+"source" : { 
+    "type" : "VIDEO", 
+    "name" : "source.mp4", 
+    "format" : "MP4", 
+    "path" : "acc/myaccount4/as/4d89f46d492d4c0453000000/source.mp4", 
+    "duration" : NumberLong(32061), 
+    "size" : NumberLong(2201519), 
+    "video" : { 
+        "codec" : "AVC", 
+        "bitrate" : NumberLong(470100), 
+        "framerate" : NumberLong(29), 
+        "width" : NumberLong(640), 
+        "height" : NumberLong(360), 
+        "duration" : NumberLong(32061), 
+        "size" : NumberLong(1883978) }, 
+    "audio" : { 
+        "codec" : "AAC LC", 
+        "bitrate" : NumberLong(72000), 
+        "sampling" : NumberLong(44100), 
+        "duration" : NumberLong(31996), 
+        "size" : NumberLong(289935) }, 
+        "created" : ISODate("2011-03-23T13:23:57Z") 
+    }, 
+    "splash" : "acc/myaccount4/as/4d89f46d492d4c0453000000/splash.jpg", 
+    "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/myaccount4/as/4d89f46d492d4c0453000000/mp4-240p.mp4",
+                "duration" : NumberLong(32083),
+                "size" : NumberLong(697721),
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : NumberLong(98316),
+                        "framerate" : NumberLong(24),
+                        "width" : NumberLong(426),
+                        "height" : NumberLong(240),
+                        "duration" : NumberLong(32083),
+                        "size" : NumberLong(394289)
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : NumberLong(70307),
+                        "sampling" : NumberLong(48000),
+                        "duration" : NumberLong(32000),
+                        "size" : NumberLong(281229)
+                },
+                "created" : ISODate("2011-03-23T13:24:06Z")
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/myaccount4/as/4d89f46d492d4c0453000000/mp4-360p.mp4",
+                "duration" : NumberLong(32083),
+                "size" : NumberLong(934781),
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : NumberLong(157497),
+                        "framerate" : NumberLong(24),
+                        "width" : NumberLong(640),
+                        "height" : NumberLong(360),
+                        "duration" : NumberLong(32083),
+                        "size" : NumberLong(631630)
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : NumberLong(70307),
+                        "sampling" : NumberLong(48000),
+                        "duration" : NumberLong(32000),
+                        "size" : NumberLong(281229)
+                },
+                "created" : ISODate("2011-03-23T13:24:12Z")
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "ios-320p.mp4",
+                "media" : "ios-320p",
+                "format" : "MP4",
+                "path" : "acc/myaccount4/as/4d89f46d492d4c0453000000/ios-320p.mp4",
+                "duration" : NumberLong(32083),
+                "size" : NumberLong(724425),
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : NumberLong(105677),
+                        "framerate" : NumberLong(24),
+                        "width" : NumberLong(320),
+                        "height" : NumberLong(180),
+                        "duration" : NumberLong(32083),
+                        "size" : NumberLong(423807)
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : NumberLong(70307),
+                        "sampling" : NumberLong(48000),
+                        "duration" : NumberLong(32000),
+                        "size" : NumberLong(281229)
+                },
+                "created" : ISODate("2011-03-23T13:24:19Z")
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "ios-640p.mp4",
+                "media" : "ios-640p",
+                "format" : "MP4",
+                "path" : "acc/myaccount4/as/4d89f46d492d4c0453000000/ios-640p.mp4",
+                "duration" : NumberLong(32083),
+                "size" : NumberLong(1423634),
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : NumberLong(280025),
+                        "framerate" : NumberLong(24),
+                        "width" : NumberLong(640),
+                        "height" : NumberLong(360),
+                        "duration" : NumberLong(32083),
+                        "size" : NumberLong(1123015)
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : NumberLong(70307),
+                        "sampling" : NumberLong(48000),
+                        "duration" : NumberLong(32000),
+                        "size" : NumberLong(281229)
+                },
+                "created" : ISODate("2011-03-23T13:24:23Z")
+        }
+    ], 
+    "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/myaccount4/as/4d89f46d492d4c0453000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/myaccount4/as/4d89f46d492d4c0453000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/myaccount4/as/4d89f46d492d4c0453000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/myaccount4/as/4d89f46d492d4c0453000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/myaccount4/as/4d89f46d492d4c0453000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+
+    ], 
+    "created" : ISODate("2011-03-23T13:23:57Z"), 
+    "version" : NumberLong(1) 
+}

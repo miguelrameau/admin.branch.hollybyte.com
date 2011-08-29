@@ -1,0 +1,239 @@
+.all {
+    position: relative;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+.clear {
+    clear: both;
+}
+/* INDEX */
+.HB-Connector-Top {
+    width: 100%;
+    position: relative;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    clear: both;
+    padding-top: 15px;
+}
+.HB-Connector-Refresh {
+    width: 100px;
+    float: left;
+    height: inherit;
+    position: relative;
+    color: #B8B8B8;
+    font-size: 12px;
+    cursor: pointer;
+}
+.HB-Connector-Refresh img {
+    position: relative;
+    top: 5px;
+    left: 2px;
+    cursor: pointer;
+}
+.HB-Connector-Add {
+    width: 69px;
+    height: 29px;
+    border: none;
+    background-image: url(../images/assetedit/btn_add.png);
+    float: left;
+    margin-left: 30px;
+    top: 5px;
+    position: relative;
+    cursor: pointer;
+}
+/* FORM */
+.HB-Connector-Edit {
+    position: relative;
+    clear: both;
+    width: 100%;
+}
+.HB-Connector-Menu {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #E7E7E7;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.HB-Connector-Menu-Content {
+    width: 980px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: inherit;
+}
+.HB-Connector-Crumbs {
+    height: 25px;
+    position: relative;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 100%;
+}
+.HB-Connector-Crumbs-Before {
+    position: relative;
+    width: auto;
+    float: left;
+    margin-right: 5px;
+    color: #B8B8B8;
+}
+.HB-Connector-Crumb {
+    position: relative;
+    padding-top: 2px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+    top: 2px;
+}
+.HB-Connector-Crumbs-Current {
+    position: relative;
+    width: auto;
+    float: left;
+    margin-left: 5px;
+    color: #333333;
+    font-size: 15px;
+    top: 0px;
+}
+
+.HB-Connector-Edit-Content {
+    position:relative;
+    width:980px;
+    margin-left:auto;
+    margin-right:auto;
+    clear:both;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    border-bottom:#e7e7e7 solid 1px;
+}
+.HB-Connector-Edit-Left {
+    position:relative;
+    float:left;
+    width:100px;
+    height:auto;
+    border-radius: 10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    padding:15px;
+    background-color:#EBEBEB;   
+    margin-right:15px;
+    padding-bottom:5px;
+}
+
+.HB-Connector-Edit-Left-Item {
+    width:100%;
+    position:relative;
+    margin-bottom:10px;
+    text-align:center;
+    cursor:pointer;
+    position:relative;
+}
+.HB-Connector-Edit-Form {
+    width:730px;
+    height:auto;
+    position:relative;
+    float:left;
+}
+.HB-Connector-Edit-Form-Box {
+    position:relative;
+    width:370px;
+    margin-bottom:10px;
+    clear:both;
+}
+.HB2-Connector-Edit-Form-Box label {
+    width:100%;
+    padding-top:5px;
+    padding-bottom:3px;
+    color:#B8B8B8;
+    font-size:12px;
+}
+
+.HB2-Connector-Edit-Form-Box-Txt{
+    width:95%;
+    padding:5px;
+    height:30px;
+    clear:both;
+    position:relative;
+    background-color:#F7F7F7;
+    border-color:#CDCDCD;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.HB2-Connector-Edit-Form-Box-Area{
+    width:95%;
+    padding:5px;
+    height:90px;
+    position:relative;
+    background-color:#F7F7F7;
+    border-color:#CDCDCD;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.connectorEdit-right-element-date{
+    width:98.7%;
+    height:26px;
+    padding-top:2px;
+    padding-bottom:2px;
+    /*others*/
+    border-radius:10px;         
+    /*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius:10px;
+    /*Safari:*/
+    -webkit-border-radius:10px;
+    border-color:#CDCDCD;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    
+    background-color:#FFF;
+    margin-top:0px;
+    padding-left:4px;
+    font-size:11px;
+    color:#333333;
+    font-weight:normal;
+    background-image:url(../images/assetedit/ico_picker.png);
+    background-repeat:no-repeat;
+    background-position:center right;
+    cursor:pointer;
+    margin-right:13px;
+    float:left;
+    top:-2px;
+    
+}
+
+.connectorEdit-right-element-date2{
+    width:98.7%;
+    height:26px;
+    padding-top:2px;
+    padding-bottom:2px;
+    /*others*/
+    border-radius:10px;         
+    /*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius:10px;
+    /*Safari:*/
+    -webkit-border-radius:10px;
+    border-color:#CDCDCD;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    
+    background-color:#FFF;
+    margin-top:0px;
+    padding-left:4px;
+    font-size:11px;
+    color:#333333;
+    font-weight:normal;
+    cursor:pointer;
+    margin-right:10px;
+    float:left;
+    top:-2px;
+    
+}
+
+

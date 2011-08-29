@@ -1,0 +1,15 @@
+tr.odd {
+    background-color: #FFFFFF;
+}
+tr.even {
+    background-color:#EDEDED;
+    /*#EBEBEB*/
+}
+
+#addAssetTable_filter {
+    margin-bottom: 25px;
+}
+
+#assetTable_wrapper {
+    margin-top: 25px;
+}

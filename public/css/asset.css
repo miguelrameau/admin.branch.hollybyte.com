@@ -1,0 +1,1457 @@
+/*ASSET LIST*/
+.hb-asset-assetMenu {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #E7E7E7;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.hb-asset-assetMenu-content {
+    width: 980px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: inherit;
+}
+.hb-asset-assetMenu-refresh {
+    width: 100px;
+    float: left;
+    height: inherit;
+    position: relative;
+    color: #B8B8B8;
+    font-size: 12px;
+    cursor: pointer;
+}
+.hb-asset-assetMenu-refresh img {
+    position: relative;
+    top: 5px;
+    left: 2px;
+    cursor: pointer;
+}
+.hb-asset-assetMenu-deploy {
+    width: 100px;
+    float: left;
+    height: inherit;
+    position: relative;
+    color: #B8B8B8;
+    font-size: 12px;
+    cursor: pointer;
+}
+.hb-asset-assetMenu-deploy img {
+    position: relative;
+    top: 5px;
+    left: 2px;
+    cursor: pointer;
+}
+.hb-asset-assetMenu-search {
+    width: 210px;
+    height: 30px;
+    float: right;
+    position: relative;
+    padding-top: 5px;
+}
+.hb-asset-assetMenu-search-box {
+    position: relative;
+    width: 173px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    float: left;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/search.png);
+    background-repeat: no-repeat;
+    height: 23px;
+}
+.hb-asset-assetMenu-search-box-txt {
+    width: 145px;
+    position: relative;
+    float: left;
+    border: none;
+    margin-right: 5px;
+    border-style: none;
+    border-width: 0px;
+}
+.hb-asset-assetMenu-search-box-clear {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    float: right;
+    margin-right: 5px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/clear.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.ie .hb-asset-assetMenu-search-box-clear {
+    top: -15px;
+}
+.ie7 .hb-asset-assetMenu-search-box-clear {
+    top: 0px;
+}
+.hb-asset-assetMenu-search-btn {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    float: right;
+    top: 5px;
+    margin-left: 4px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/btn_search.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-asset-list li {
+    width: 176px;
+    height: 134px;
+    float: left;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+    margin-left:5px;
+    margin-right:5px;
+    border-bottom: 1px solid #E7E7E7;
+    overflow: hidden;
+    background: #FFF;
+    background-repeat: no-repeat;
+    border: 2px;
+    border: solid #FFF 5px;
+    -moz-background-size: 100%; /* Firefox 3.6 */
+    border: solid #FFF 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.hb-asset-list li:hover {
+    border: solid #0099FF 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.hb-asset-list-top {
+    width:166px;
+    height:96px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2px;
+    
+    overflow: hidden;
+}
+
+.hb-asset-list-top-image {
+    position: absolute;
+    display: block;
+    width:166px;
+    height:96px;
+}
+.hb-asset-list-top-type {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    top: 7px;
+    clear: both;
+    cursor: pointer;
+}
+.hb-asset-list-top-type img{
+    width:100%;
+    height:auto;
+}
+.hb-asset-list-top-actions {
+    position: relative;
+    height: 30px;
+    width: 70px;
+    float: right;
+    top: 5px;
+}
+.hb-asset-list-top-actions-edit {
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+    margin-left: 3px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+.hb-asset-list-top-actions-delete {
+    width: 30px;
+    height: 30px;
+    width: auto;
+    margin-right: 3px;
+    margin-left: 3px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+.hb-asset-list-top-social {
+    position: relative;
+    height: 30px;
+    width: 70px;
+    float: left;
+    top: 7px;
+    margin-left: 5px;
+}
+.hb-asset-list-top-social-embed {
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+    margin-left: 3px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+.hb-asset-list-top-social-iframe {
+    width: 30px;
+    height: 30px;
+    width: auto;
+    margin-right: 3px;
+    margin-left: 3px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+.hb-asset-list-info {
+    width: 100%;
+    position: relative;
+    color: #B8B8B8;
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.hb-asset-list-info-active {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.hb-asset-list-info-text {
+    float: left;
+    width:94%;
+    padding-left:3%;
+    padding-right:3%;
+    height:35px;
+    background-color:#2A2A2A;
+    margin-left: 0px;
+    position: relative;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color:#FFF;
+}
+.hb-asset-list-info-hiddendata {
+    position: relative;
+    display: none;
+}
+.hb-asset-list-info-title {
+    position: relative;
+    float: left;
+}
+.hb-asset-loading {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/*BOTTOM*/
+.hb-asset-bottomContent {
+    width: 100%;
+    position: relative;
+    background: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/bkg_bottom.png) repeat-x;
+    height: 100px;
+}
+.hb-asset-bottom {
+    position: relative;
+    height: 50px;
+    clear: both;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hb-asset-bottom-create {
+    float: left;
+    width: 430px;
+    position: relative;
+    color: #0099FF;
+    font-size: 14px;
+}
+.hb-asset-bottom-create-img {
+    position: relative;
+    float: left;
+    top: -3px;
+    margin-right: 5px;
+}
+.hb-asset-bottom-help {
+    float: right;
+    width: 260px;
+    position: relative;
+    color: #B8B8B8;
+    font-size: 14px;
+}
+.hb-asset-bottom-help-question {
+    position: relative;
+    top: 1px;
+    margin-right: 8px;
+    float: left;
+}
+.hb-asset-bottom-help-addlive {
+    position: relative;
+    top: -9px;
+    margin-left: 5px;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*PAGINATION ASSETLIST*/
+.hb-asset-pagination {
+    float: left;
+    width: 200px;
+    position: relative;
+    height: 50px;
+}
+.hb-asset-pagination-prev {
+    cursor: pointer;
+    float: left;
+    position: relative;
+    margin-right: 5px;
+    width: 10px;
+    height: 14px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/pagination_left.png);
+}
+.hb-asset-pagination-info {
+    cursor: pointer;
+    float: left;
+    position: relative;
+    margin-right: 5px;
+    width: 75px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    color: #666666;
+    font-size: 14px;
+}
+.hb-asset-pagination-info-current {
+    width: auto;
+    float: left;
+    text-align: right;
+    width: 19px;
+    margin-right: 5px;
+    position: relative;
+}
+.hb-asset-pagination-next {
+    cursor: pointer;
+    float: left;
+    position: relative;
+    margin-right: 5px;
+    width: 10px;
+    height: 14px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/pagination_right.png);
+}
+/*ASSETEDIT*/
+
+.assetform {
+    width: 100%;
+    position: relative;
+    clear: both;
+}
+.hb-assetform-crumbs {
+    height: 30px;
+    position: relative;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 100%;
+}
+.hb-assetform-stdcrumbs {
+    height: 25px;
+    position: relative;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 100%;
+}
+.hb-assetform-crumbs-before {
+    position: relative;
+    width: auto;
+    float: left;
+    margin-right: 5px;
+    color: #B8B8B8;
+}
+.hb-assetform-crumbs-crumb {
+    position: relative;
+    padding-top: 2px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+    top: 2px;
+}
+.hb-assetform-crumbs-current {
+    position: relative;
+    width: auto;
+    float: left;
+    margin-left: 5px;
+    color: #333333;
+    font-size: 15px;
+    top: 0px;
+}
+.hb-assetform-tabTable {
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+.hb-assetform-tabTable-left {
+    width: 120px;
+    position: relative;
+    float: left;
+    height: 505px;
+}
+.hb-assetform-tabTable-left-options {
+    clear: both;
+    position: relative;
+    width: 110px;
+    height: 150px;
+    margin-right: 8px;
+    background: #EBEBEB;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+.hb-assetform-tabTable-left-options-save {
+    width: 90px;
+    height: 38px;
+    position: relative;
+    margin-bottom: 13px;
+    border: none;
+    cursor: pointer;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/buttons/save.png);
+}
+.hb-assetform-tabTable-left-options-save:hover {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/buttons/save_on.png);
+}
+.hb-assetform-tabTable-left-options-clear {
+    width: 90px;
+    height: 38px;
+    position: relative;
+    margin-bottom: 13px;
+    border: none;
+    cursor: pointer;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/buttons/clear.png);
+}
+.hb-assetform-tabTable-left-options-clear:hover {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/buttons/clear_on.png);
+}
+.hb-assetform-tabTable-left-options-back {
+    width: 90px;
+    height: 38px;
+    position: relative;
+    margin-bottom: 13px;
+    border: none;
+    cursor: pointer;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/buttons/back.png);
+}
+.hb-assetform-tabTable-left-options-back:hover {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/buttons/back_on.png);
+}
+.hb-assetform-tabTable-left-tabs {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+.hb-assetform-tabTable-left-tabs-general {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/general.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-general:hover {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/general_on.png);
+}
+.hb-assetform-tabTable-left-tabs-tags {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/tag.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-tags:hover {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/tag_on.png);
+}
+.hb-assetform-tabTable-left-tabs-metadata {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/metadata.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-metadata:hover {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/metadata_on.png);
+}
+.hb-assetform-tabTable-left-tabs-profiles {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/profiles.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-profiles:hover {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/profiles_on.png);
+}
+.hb-assetform-tabTable-left-tabs-publish {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/publish.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-publish:hover {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/publish_on.png);
+}
+.hb-assetform-tabTable-left-tabs-subtitles {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/subtitles.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-subtitles:hover {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/subtitles_on.png);
+}
+.hb-assetform-tabTable-left-tabs-youtube {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/youtube_off.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-youtube:hover {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/youtube_on.png);
+}
+.hb-assetform-tabTable-left-tabs-generalOn {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/general_on.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-tagsOn {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/tag_on.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-metadataOn {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/metadata_on.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-profilesOn {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/profiles_on.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-publishOn {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/publish_on.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-subtitlesOn {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/subtitles_on.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-left-tabs-youtubeOn {
+    width: 122px;
+    height: 45px;
+    margin-bottom: 2px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/tabs/youtube_on.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-right {
+    width: 808px;
+    position: relative;
+    float: left;
+    background: #FFFFFF;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    /*Safari:*/
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+}
+.hb-assetform-tabTable-general-right input, assetEdit-tabTable-tagsGroup {
+    height: 35px;
+}
+/*tagGeneral*/
+.hb-assetform-tabTable-general {
+    width: 100%;
+    position: relative;
+    height: 490px;
+}
+.hb-assetform-tabTable-general-left {
+    position: relative;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.hb-assetform-tabTable-general-left-img {
+    position: relative;
+    width: 100px;
+    margin-bottom: 32px;
+    width: 396px;
+    height: 225px;
+    overflow: hidden;
+    text-align: center;
+}
+.hb-assetform-tabTable-general-left-img-background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.hb-assetform-tabTable-general-left-img-play {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    top: -130px;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-general-left-greybox {
+    position: relative;
+    width: 140px;
+    margin-bottom: 10px;
+    height: 45px;
+	padding:10px;
+   	background:#CCCCCC;
+	border-radius:10px;
+	/*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius: 10px; 
+    /*Safari:*/
+    -webkit-border-radius: 10px;
+	float:left;
+	overflow:hidden;
+    
+}
+.hb-assetform-tabTable-general-left-or{
+	color:#B8B8B8;
+	font-size:15px;
+	margin-top:20px;
+	margin-left:15px;
+	margin-right:15px;
+	float:left;
+	
+}
+.hb-assetform-tabTable-general-left-newthumbnail-img {
+    width: 48px;
+    height: 30px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/btn_thumbnail.png);
+    border: none;
+    cursor: pointer;
+    top: -7px;
+}
+.hb-assetform-tabTable-general-left-newthumbnail-lbl {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    color: #B8B8B8;
+    height: 25px;
+	font-size:11px;
+	margin-top:15px;
+	width:100%;
+}
+.hb-assetform-tabTable-general-left-newthumbnail-lbl img {
+    float: right;
+    top: -6px;
+    position: relative;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.chrome .hb-assetform-tabTable-general-left-newthumbnail-lbl img {
+    top: -25px;
+}
+.hb-assetform-tabTable-general-left-newthumbnail-help {
+    float: left;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/icon_question.png);
+}
+.hb-assetform-tabTable-general-left-upload {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.hb-assetform-tabTable-general-left-info {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #A4A4A4;
+}
+.hb-assetform-tabTable-general-right {
+    width: 370px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+    margin-left: 20px;
+    text-align: left;
+}
+.hb-assetform-tabTable-general-right-info {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #A4A4A4;
+    height: 30px;
+    overflow: hidden;
+}
+.hb-assetform-tabTable-general-right-half{
+	width:50%;
+	float:left;
+	margin-bottom:5px;
+	position:relative;
+	margin-top:-10px;
+}
+.hb-assetform-tabTable-general-right-half-input{
+	border:none;
+	font-size:14px;
+	font-weight:bold;
+	color:#B8B8B8;
+	top:-4px;
+	position:relative;
+	width:100px;
+	float:left;
+	height:35px;
+}
+.hb-assetform-tabTable-general-right-info-ico {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+}
+.hb-assetform-tabTable-general-right-info-lbl {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    color: #B8B8B8;
+}
+.hb-assetform-tabTable-general-right-info-lbl2 {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    color: #B8B8B8;
+    font-weight: bold;
+}
+.hb-assetform-tabTable-general-right-info-help {
+    float: left;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/icon_question.png);
+}
+.hb-assetform-tabTable-general-right-info-title {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    color: #B8B8B8;
+    font-size: 10px;
+    top: 2px;
+}
+.hb-assetform-tabTable-general-right-formbox {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.hb-assetform-tabTable-general-right-formbox-lbl {
+    width: 50%;
+    height: 20px;
+    position: relative;
+    font-size: 11px;
+    color: #B8B8B8;
+    float: left;
+}
+.hb-assetform-tabTable-general-right-formbox-lbl2 {
+    width: 44%;
+    height: 20px;
+    position: relative;
+    font-size: 11px;
+    color: #B8B8B8;
+    float: left;
+    margin-left: 6%;
+}
+.hb-assetform-tabTable-general-right-formbox-lbl-error {
+    color: #990000;
+    position: relative;
+    margin-left: 10px;
+}
+.hb-assetform-tabTable-general-right-formbox-txt {
+    background: #FFF;
+    font-size: 14px;
+    width: 99%;
+    height: 24px;
+    padding: 5px;
+    padding-top: 3px;
+    border: #CCCCCC solid 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    /*Safari:*/
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+.hb-assetform-tabTable-general-right-formbox-area {
+    background: #FFF;
+    font-size: 14px;
+    width: 99%;
+    height: 85px;
+    padding: 5px;
+    padding-top: 3px;
+    border: #CCCCCC solid 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    /*Safari:*/
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+/*FIN GENERAL*/
+
+/*tabTags*/
+.hb-assetform-tabTable-tags {
+    width: 100%;
+    position: relative;
+    height: 440px;
+    display: none;
+}
+.hb-assetform-tabTable-tags hr {
+    color: #D7D7D7;
+    border-color: #D7D7D7;
+    background-color: #D7D7D7;
+}
+.hb-assetform-tabTable-tagsGroup {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    clear: both;
+    margin-top: 10px;
+}
+.hb-assetform-tabTable-tags-title {
+    width: 100%;
+    position: relative;
+    height: 25px;
+    margin-bottom: 3px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #B8B8B8;
+    font-weight: bold;
+}
+.hb-assetform-tabTable-tags-title img {
+    float: left;
+    position: relative;
+    margin-right: 5px;
+    top: 2px;
+}
+.hb-assetform-tabTable-tags-add {
+    position: relative;
+    width: 100%;
+    height: 33px;
+    margin-bottom: 10px;
+    clear: both;
+}
+.hb-assetform-tabTable-tags-add-txt {
+    position: relative;
+    width: 370px;
+    background: #F7F7F7;
+    font-size: 14px;
+    height: 24px;
+    padding: 5px;
+    padding-top: 3px;
+    border: #CCCCCC solid 1px;
+    /*others*/
+    border-radius: 10px;
+    /*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius: 10px;
+    /*Safari:*/
+    -webkit-border-radius: 10px;
+    float: left;
+}
+.hb-assetform-tabTable-tags-add-btn {
+    position: relative;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/btn_add.png);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    float: left;
+    border: none;
+    margin-left: 5px;
+    top: 2px;
+}
+.hb-assetform-tabTable-tags-info {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 11px;
+    color: #A4A4A4;
+}
+.hb-assetform-tabTable-tags-list {
+    width: 540px;
+    position: relative;
+    clear: both;
+}
+.hb-assetform-tabTable-tags-element {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.hb-assetform-tabTable-tags-element-ico {
+    position: relative;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/btn_delete.png);
+    width: 8px;
+    height: 8px;
+    margin-left: 3px;
+    float: left;
+    cursor: pointer;
+    top: 4px;
+}
+.hb-assetform-tabTable-tags-element-txt {
+    position: relative;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+.hb-assetform-tabTable-publish {
+    width: 100%;
+    position: relative;
+    /*height:440px;*/
+    text-align: center;
+    display: none;
+}
+.hb-assetform-tabTable-publish-info {
+    position: relative;
+    color: #B8B8B8;
+    font-size: 14px;
+    height: 25px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.hb-assetform-tabTable-publish-info-calendar {
+    position: relative;
+    width: 17px;
+    height: 16px;
+    float: left;
+    margin-right: 5px;
+}
+.hb-assetform-tabTable-publish-info-text {
+    position: relative;
+    float: left;
+    width: auto;
+    margin-right: 5px;
+}
+.hb-assetform-tabTable-publish-info-help {
+    float: left;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/icon_question.png);
+}
+.hb-assetform-tabTable-publish-table {
+    position: relative;
+    width: 790px;
+    clear: both;
+    text-align: left;
+    margin-bottom: 15px;
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+}
+.hb-assetform-tabTable-publish-table-header {
+    height: 15px;
+    margin-bottom: 10px;
+    width: 736px;
+    margin-left: 50px;
+}
+.hb-assetform-tabTable-publish-table-header-element {
+    position: relative;
+    width: 162px;
+    padding-left: 40px;
+    padding-right: 40px;
+    float: left;
+    color: #B8B8B8;
+    text-align: center;
+}
+.hb-assetform-tabTable-publish-table-content {
+    width: 100%;
+    position: relative;
+    clear: both;
+}
+.hb-assetform-tabTable-publish-table-content-left {
+    width: 50px;
+    position: relative;
+    float: left;
+    margin-top: 8px;
+}
+.hb-assetform-tabTable-publish-table-content-left-element {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    clear: both;
+    width: 100%;
+    font-size: 10px;
+    color: #B8B8B8;
+    text-align: center;
+}
+.hb-assetform-tabTable-publish-table-content-grey-date {
+    width: 45%;
+    height: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    /*others*/
+    border-radius: 10px;
+    /*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius: 10px;
+    /*Safari:*/
+    -webkit-border-radius: 10px;
+    border: 1px solid #CCCCCC;
+    background-color: #FFF;
+    margin-top: 0px;
+    padding-left: 4px;
+    font-size: 11px;
+    color: #333333;
+    font-weight: normal;
+    margin-right: 10px;
+    float: left;
+}
+.hb-assetform-tabTable-publish-table-content-grey-time {
+    width: 45%;
+    height: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    /*others*/
+    border-radius: 10px;
+    /*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius: 10px;
+    /*Safari:*/
+    -webkit-border-radius: 10px;
+    border: 1px solid #CCCCCC;
+    background-color: #FFF;
+    margin-top: 0px;
+    padding-left: 4px;
+    font-size: 14px;
+    color: #333333;
+    font-weight: normal;
+    float: right;
+    left: 3px;
+    position: relative;
+}
+.hb-assetform-tabTable-publish-table-content-grey {
+    /*others*/
+    border-radius: 10px;
+    /*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius: 10px;
+    /*Safari:*/
+    -webkit-border-radius: 10px;
+    background-color: #E2E2E2;
+    border-left: 1px solid #D7D7D7;
+    border-right: 1px solid #D7D7D7;
+    width: 733px;
+    height: 130px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
+    font-size: 10px;
+    color: #A4A4A4;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+}
+.hb-assetform-tabTable-publish-table-content-grey-from {
+    border-right: #D7D7D7 solid 1px;
+    position: relative;
+    width: 160px;
+    padding-left: 41px;
+    padding-right: 41px;
+    padding-top: 5px;
+    float: left;
+    height: 130px;
+}
+.hb-assetform-tabTable-publish-table-content-grey-until {
+    border-right: #D7D7D7 solid 1px;
+    position: relative;
+    width: 160px;
+    padding-left: 41px;
+    padding-right: 41px;
+    padding-top: 5px;
+    float: left;
+    height: 130px;
+}
+.hb-assetform-tabTable-publish-table-content-grey-createtime {
+    position: relative;
+    width: 100%;
+    padding-top: 5px;
+    clear: both;
+    height: 70px;
+}
+.hb-assetform-tabTable-publish-btn {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/btn_unpublish.png);
+    position: relative;
+    width: 156px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    clear: both;
+}
+.hb-assetform-tabTable-unpublish-btn {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/btn_publish.png);
+    position: relative;
+    width: 156px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    clear: both;
+}
+.hb-assetform-tabTable-publishvalue {
+    position: relative;
+    float: left;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}
+.hb-assetform-tabTable-publish-msgSuccess {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    margin-bottom: 4px;
+    text-align: center;
+    color: #0099FF;
+    font-weight: bold;
+    font-size: 11px;
+}
+.hb-assetform-tabTable-publish-msgError {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    margin-bottom: 4px;
+    text-align: center;
+    color: #990000;
+    font-weight: bold;
+    font-size: 11px;
+}
+/*tabSubtitles*/
+.hb-assetform-tabTable-subtitles {
+    width: 100%;
+    position: relative;
+    height: auto;
+    text-align: center;
+    display: none;
+}
+/*tabMetadata*/
+.hb-assetform-tabTable-metadata {
+    width: 100%;
+    position: relative;
+    /*height:440px;*/
+    height: auto;
+    text-align: center;
+    display: none;
+}
+.hb-assetform-tabTable-metadata-table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+}
+.hb-assetform-tabTable-metadata-table td {
+    text-align: left;
+    color: #666666;
+}
+.hb-assetform-tabTable-metadata-table button {
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/tables/btn_action.png);
+    width: 63px;
+    height: 33px;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-metadata-table-edit {
+    background: #666666;
+}
+.hb-assetform-tabTable-metadata-table-edit button {
+}
+.hb-assetform-tabTable-metadata-tablePager {
+    width: 200px;
+    position: relative;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    clear: both;
+}
+.hb-assetform-tabTable-metadata-header {
+    width: 100%;
+    position: relative;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    clear: both;
+    padding-top: 15px;
+}
+.hb-assetform-tabTable-metadata-header-title {
+    position: relative;
+    width: 300px;
+    float: left;
+    top: 10px;
+}
+.hb-assetform-tabTable-metadata-header-title-ico {
+    position: relative;
+    float: left;
+    top: 4px;
+    margin-right: 3px;
+}
+.hb-assetform-tabTable-metadata-header-title-help {
+    float: left;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/icon_question.png);
+    top: 1px;
+}
+.hb-assetform-tabTable-metadata-header-title-lbl {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    color: #B8B8B8;
+}
+.hb-assetform-tabTable-metadata-header-right {
+    position: relative;
+    width: 180px;
+    float: right;
+    top: 5px;
+    height: 30px;
+    text-align: left;
+}
+.hb-assetform-tabTable-metadata-header-right img {
+    cursor: pointer;
+}
+/*Search*/
+.hb-assetform-tabTable-metadata-header-search {
+    width: 210px;
+    height: 30px;
+    float: right;
+    position: relative;
+    padding-top: 5px;
+}
+.hb-assetform-tabTable-metadata-header-search-box {
+    position: relative;
+    width: 173px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    float: left;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/search.png);
+    background-repeat: no-repeat;
+    height: 23px;
+}
+.hb-assetform-tabTable-metadata-header-search-box-txt {
+    width: 145px;
+    position: relative;
+    float: left;
+    border: none;
+    margin-right: 5px;
+}
+.hb-assetform-tabTable-metadata-header-search-box-clear {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    float: right;
+    margin-right: 5px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/clear.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-metadata-header-search-btn {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    float: right;
+    top: 5px;
+    margin-left: 4px;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetlist/btn_search.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-metadata-header-add {
+    width: 69px;
+    height: 29px;
+    border: none;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/btn_add.png);
+    float: right;
+    margin-left: 30px;
+    top: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-metadata-header-delete {
+    width: 69px;
+    height: 29px;
+    border: none;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/btn_delete_big.png);
+    float: right;
+    margin-left: 30px;
+    top: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.hb-assetform-tabTable-profiles {
+    width: 100%;
+    position: relative;
+    display: none;
+}
+/*PROFILES*/
+.hb-assetform-tabTable-profiles-header-add {
+    width: 137px;
+    height: 29px;
+    border: none;
+    background-image: url(https://hollybyte.s3.amazonaws.com/sites/admin/img/assetedit/btn_reencode_en.png);
+    float: right;
+    margin-left: 30px;
+    top: 5px;
+    position: relative;
+    cursor: pointer;
+}
+/*FIN ASSETEDIT*/
+
+/*POPUPS ASSET EDIT*/
+.hb-assetform-metavaluesWindow {
+    width: 350px;
+    overflow: hidden;
+    border: solid 1px #D7D7D7;
+    background-color: #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3px;
+    padding-bottom: 8px;
+}
+.hb-assetform-metavaluesWindow-line {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 10px;
+    clear: both;
+    height: 20px;
+}
+.hb-assetform-metavaluesWindow-lbl {
+    width: 120px;;
+    float: left;
+}
+.hb-assetform-metavaluesWindow-txt {
+    float: right;
+    width: 180px;
+}
+.hb-assetform-metavaluesWindow-list {
+    float: right;
+    width: 185px;
+}
+.hb-assetform-metavaluesWindow-list select {
+    width: 95%;
+    position: relative;
+}
+.hb-assetform-metavaluesWindow-list input {
+    width: 95%;
+    position: relative;
+}
+.hb-assetform-metavaluesWindow-caption {
+    width: 100%;
+    height: 15px;
+    background-color: #EBEBEB;
+    padding: 5px;
+    position: relative;
+}
+.hb-assetform-metavaluesWindow-content {
+    position: relative;
+    width: 100%;
+}
+.hb-assetform-youtube-header {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.hb-assetform-youtube-content {
+    width: 90%;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+.hb-asset-subtitle-action-delete{
+    cursor:pointer;
+}
+
+
+
+

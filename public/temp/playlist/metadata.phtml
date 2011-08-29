@@ -1,0 +1,98 @@
+<div class="HB-Playlist-Tab-Metadata" id="tabMetaContent">
+    <div class="assetEdit-tabTable-metadata-header">
+        <div class="assetEdit-tabTable-metadata-header-title">
+            <img src="images/assetedit/ico_metadata.png" alt="ico" class="assetEdit-tabTable-metadata-header-title-ico" />
+            <div class="assetEdit-tabTable-metadata-header-title-lbl">
+                METADATA
+            </div>
+            <a class="assetEdit-tabTable-metadata-header-title-help"></a>
+        </div>
+        <div class="assetEdit-tabTable-metadata-header-right">
+            <img src="/images/assetedit/btn_add.png" alt="valueAdd" id="valueAddValue" />
+        </div>
+    </div>
+    <table class="display dataTable" border="0" cellpadding="0" cellspacing="0" id="metadataTable">
+        <thead>
+            <tr>
+                <th style="width: 250px; text-align: center">NAME</th>
+                <th style="width: 233px; text-align: center">TYPE</th>
+                <th></th>
+                <th style="width: 166px; text-align: center">VALUE</th>
+                <th style="width: 100px; text-align: center">EDIT/DELETE</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="clear">
+    </div>
+</div>
+<div id="valueEditDialog" title="Metavalue" class="jDialog">
+    <form id="valueForm" action="/upload/file" method="POST" enctype="multipart/form-data">
+        <div class="line">
+            <label for="valueName" class="line-lbl">
+                Name
+            </label>
+            <input type="text" name="valueName" id="valueName" />
+        </div>
+        <div class="line">
+            <div id="contentValueType">
+                <label for="valueType" class="line-lbl">
+                    Type
+                </label>
+                <select name="valueType" id="valueType" >
+                    <option value="STRING">String</option>
+                    <option value="INTEGER">Integer</option>
+                    <option value="DOUBLE">Double</option>
+                    <option value="BOOLEAN">Boolean</option>
+                    <option value="COLOR">Color</option>
+                    <option value="URL">Url</option>
+                    <option value="IMAGE">Image</option>
+                    <option value="FILE">File</option>
+                </select>
+            </div>
+        </div>
+        <div class="line">
+            <label  class="line-lbl">
+                Value
+            </label>
+                <div class="line-elerr">
+                    <input type="hidden" name="valueValue" id="valueValue" />
+            </div>
+            <div id="valueStringBlock" class="line-el">
+                <input type="input" name="valueStringValue" id="valueStringValue" />
+            </div>
+            <div id="valueIntegerBlock" class="line-el">
+                <input type="input" name="valueIntegerValue" id="valueIntegerValue" />
+            </div>
+            <div id="valueDoubleBlock" class="line-el">
+                <input type="input" name="valueDoubleValue" id="valueDoubleValue" />
+            </div>
+            <div id="valueBooleanBlock" class="line-el">
+                <input type="checkbox" name="valueBooleanValue" id="valueBooleanValue" />
+            </div>
+            <div id="valueColorBlock" class="line-elcolor">
+                <!-- <input type="input" name="valueColorValue" id="valueColorValue" />-->
+            </div>
+            <div id="valueUrlBlock" class="line-el">
+                <input type="input" name="valueUrlValue" id="valueUrlValue" />
+            </div>
+            <div id="valueFileBlock" class="line-el">
+                <input type="hidden" name="valueFileValue" id="valueFileValue" />
+                <input type="hidden" name="valueFileUploading" id="valueFileUploading" value="false"/>
+                <input type="hidden" name="valueUpdateMode" id="valueUpdateMode" />
+                <input type="file" name="valueFileFile" id="valueFileFile" />
+                <button type="submit" id="valueUploadFile">
+                    Upload File
+                </button>
+            </div>
+        </div>
+    </form>
+    <div class="clear">
+    </div>
+</div>
+<div id="valueDeleteDialog" title="Delete Connector?" class="jDialog">
+    <p>
+        <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?
+    </p>
+</div>

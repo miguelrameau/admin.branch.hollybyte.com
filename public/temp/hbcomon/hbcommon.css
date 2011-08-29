@@ -1,0 +1,560 @@
+/** Add css rules here for your application. */
+body{
+    font-family:"Myriad Pro", Arial;
+    padding:0px;
+    margin:0px;
+}
+.floatLeft{
+    float:left;
+}
+
+.clear{
+    clear:both;
+}
+.error {
+    color: red;
+}
+
+.wrapper{
+    position:relative;
+    width:100%;
+    clear:both;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.all{
+    position:relative;
+    width:980px;
+    margin-left:auto;
+    margin-right:auto;
+    clear:both;
+}
+
+.allUnderline{
+    position:relative;
+    width:980px;
+    margin-left:auto;
+    margin-right:auto;
+    clear:both;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    border-bottom:#e7e7e7 solid 1px;
+}
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+a{
+    border-width:0px;
+    border:none;
+    text-decoration:none;
+}
+img{
+    border-color:#FFF;
+    border-width:0px;
+    border:none;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+li{
+    padding:0px;
+    margin:0px;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}
+
+.aquilae-home {
+    width:980px;
+    position:relative;
+}
+
+
+.hb-tabTable-metadata-header {
+    width: 100%;
+    position: relative;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    clear: both;
+    padding-top: 15px;
+}
+
+.hb-refresh{
+    width:155px;
+    float:left;
+    height:inherit;
+    position:relative;
+    color:#B8B8B8;
+    font-size:12px;
+    cursor:pointer;
+    padding-top:7px;
+}
+.hb-refresh img{
+    position:relative;
+    float:right;
+    top:-3px;
+}
+
+
+.loading-wrapper{
+    border:none;
+    height: 99%;
+    width: 99%;
+    background:#FFF;
+    position:absolute;
+    filter: alpha(opacity=80);
+    opacity: .8;
+    left: 0px;
+    top: 0px;
+    
+}
+
+
+.loading{
+    
+    position:absolute;
+    border:none;
+    filter: alpha(opacity=90);
+    opacity: .9;
+    text-align:center;
+    vertical-align:middle;
+    left: 50%;
+    top: 50%;
+    width:75px;
+    height:58px;
+    z-index: 100;
+    
+}
+.loading img{
+    position:relative;
+}
+.loading .ui-widget-content{
+    width:100%;
+    height:100%;
+}
+
+
+
+/*HEADER*/
+
+.hb-header{
+    position:relative;
+    width:100%;
+    height:125px;
+    background:#191919;
+    color:#7F8080;
+    font-size:13px;
+}
+.hb-headerAnonymous{
+    position:relative;
+    width:100%;
+    height:28px;
+    background:#191919;
+    color:#7F8080;
+    font-size:13px;
+}
+
+.hb-header-top{
+    width:1024px;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    height:20px;
+    padding-top:2px;
+    padding-bottom:3px;
+}
+.hb-header-top-content{
+    width:auto;
+    position:relative;
+    float:right;
+    padding-left:4px;
+    padding-bottom:2px;
+    font-size:12px;
+    border-left:1px solid #666;
+}
+.hb-header-top-content img{
+    position:relative;
+    top:4px;
+    margin-left:2px;
+    margin-right:2px;
+}
+.hb-header-bottom{
+    height:90px;
+    padding-top:5px;
+    padding-bottom:5px;
+    position:relative;
+    width:100%;
+    background:#2A2A2A;
+    
+}
+.hb-header-bottom-content{
+    height:90px;
+    position:relative;
+    width:1024px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.hb-header-bottom-content-logo{
+    position:relative;
+    width:136px;
+    height:65px;
+    float:left;
+    
+    margin-top:30px;
+}
+.hb-header-bottom-content-logo-home{
+    position:relative;
+    width:52px;
+    height:9px;
+    margin-top:5px;
+    cursor:pointer;
+    padding:5px;
+    margin-left:10px;
+    
+}
+
+.hb-header-bottom-content-logotext{
+    margin-left:3px;
+    color:#7F8080;
+    font-size:15px;
+    float:left;
+    margin-top:43px;
+    
+}
+
+.hb-header-bottom-content-right{
+    position:relative;
+    width:425px;
+    float:right;
+    height:36px;
+    margin-left:5px;
+    padding-left:5px;
+    margin-top:5px;
+    
+}
+
+.hb-header-bottom-content-right-button{
+    position:relative;
+    width:120px;
+    height:46px;
+    margin-right:25px;
+    margin-left:10px;
+    margin-top:15px;
+    background:url(../images/header/btn_upload.jpg) no-repeat;
+    border:none;
+    float:left;
+    
+    cursor:pointer;
+}
+.hb-header-bottom-content-right-user{
+    border-left:1px solid #666;
+    width:185px;
+    position:relative;
+    padding-left:25px;
+    padding-right:5px;
+    float:left;
+    height:80px;
+    
+}
+.hb-header-bottom-content-right-user-txt{
+    width:100%;
+    position:relative;
+    text-align:right;
+    margin-bottom:7px;
+    color:#CCCCCC;
+}
+.hb-header-bottom-content-right-user-select{
+    width:100%;
+    position:relative;
+    margin-bottom:10px;
+}
+.hb-header-bottom-content-right-user-btns{
+    width:auto;
+    float:right;
+    position:relative;
+    height:23px;
+    
+}
+.hb-header-bottom-content-right-user-btns-settings{
+    width:86px;
+    height:23px;
+    position:relative;
+    float:left;
+    margin-right:5px;
+    border:none;
+    cursor:pointer;
+}
+.hb-header-bottom-content-right-user-btns-logout{
+    width:74px;
+    height:23px;
+    position:relative;
+    float:left;
+    background:url(../images/header/btn_logout.png) no-repeat;
+    border:none;
+    cursor:pointer;
+}
+.hb-header-bottom-content-right-userLogo{
+    width:48px;
+    position:relative;
+    float:right;
+    margin-top:6px;
+}
+
+
+/*END HEADER*/
+
+
+
+/*FOOTER*/
+.hb-footer {
+    width: 100%;
+    position: relative;
+    height: 66px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.hb-footer-content {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 66px;
+    position: relative;
+}
+.hb-footer-content-left {
+    position: relative;
+    width: 330px;
+    float: left;
+    height: 19px;
+    color: #7F8080;
+    font-size: 14px;
+    padding-top: 8px;
+}
+.hb-footer-content-center {
+    position: relative;
+    width: 380px;
+    float: left;
+    height: 19px;
+    color: #919191;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 10px;
+}
+.hb-footer-content-right {
+    position: relative;
+    width: 118px;
+    float: right;
+    height: 46px;
+}
+/*END FOOTER*/
+
+
+
+/*
+    VALIDATION MESSAGES
+*/
+
+.vld-msg {
+    color: #c00;
+    display: none;
+}
+
+.vld-rule-required .vld-required,
+.vld-rule-no-whitespace .vld-no-whitespace,
+.vld-rule-identifier .vld-identifier,
+.vld-rule-duplicate-id .vld-duplicate-id,
+.vld-rule-numeric .vld-numeric
+{
+    display: inline;
+}
+
+
+/*VALUE DIALOG*/
+
+.jDialog{
+
+    overflow:visible;
+    position:relative;
+
+}
+.jDialog fieldset{
+    position:relative;
+    border-color:#5B5B5B;
+    margin-top:20px;
+    position:relative;
+    
+}
+.jDialog .line{
+    width:auto;
+    text-align:left;
+    margin-bottom:10px;
+    font-size:13px;
+}
+
+.jDialog .line input, #valueEditDialog .line select{
+    
+    font-weight:normal;
+    background:#FFF;
+    font-size:14px;
+    width:80%;
+    height:33px;
+    padding:5px;
+    padding-top:3px;
+    border: #CCCCCC solid 1px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    
+    /*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius-topleft:10px;
+    -moz-border-radius-topright:10px;
+    -moz-border-radius-bottomleft:10px;
+    -moz-border-radius-bottomright:10px;
+    
+    /*Safari:*/
+    -webkit-border-top-left-radius:10px;
+    -webkit-border-top-right-radius:10px;
+    -webkit-border-bottom-left-radius:10px;
+    -webkit-border-bottom-right-radius:10px;
+
+}
+.jDialog .line label.error {
+    font-size:11px;
+    color:#AD3030;
+    position:absolute;
+    float:right;
+    margin-left:10px;
+    top:10px;
+    left:100px;
+    width:200px;
+
+}
+
+.jDialog .line-lbl{
+    
+    text-align:left;
+    margin-right:15px;
+    float:left;
+    width:100%;
+    height:15px;
+    position:relative;
+    font-size:13px;
+    font-weight:normal;
+    margin-bottom:0px;
+}
+
+
+.jDialog .line-el{
+    width:auto;
+    text-align:left;
+    width:180px;
+    float:left;
+    /*z-index:3;*/
+    position:relative;
+}
+.jDialog .line-elerr{
+    width:auto;
+    text-align:left;
+    width:180px;
+    float:left;
+    top:-8px;
+    left:-20px;
+    /*z-index:3;*/
+    position:relative;
+}
+
+.jDialog .line-elcolor{
+    width:auto;
+    text-align:left;
+    width:120px;
+    left:-14px;
+    float:left;
+    position:relative;
+    z-index:999999;
+}
+
+.ui-dialog-content{
+    /*z-index:2;*/
+}
+.ui-dialog-buttonpane{
+    
+    border:none;
+    /*z-index:1;*/
+}
+
+.ui-dialog .ui-dialog-buttonpane button{
+    height:40px;
+    padding:3px;
+    text-align:center;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:13px;
+    vertical-align:text-top;
+    margin:0px;
+    background-position:center;
+    background:#0099FF;
+    color:#FFF;
+    font-weight:bold;
+    margin-right:5px;
+    
+    border: #CCCCCC solid 1px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    
+    /*Mozilla (Firefox, Netscape, etc.):*/
+    -moz-border-radius-topleft:10px;
+    -moz-border-radius-topright:10px;
+    -moz-border-radius-bottomleft:10px;
+    -moz-border-radius-bottomright:10px;
+    
+    /*Safari:*/
+    -webkit-border-top-left-radius:10px;
+    -webkit-border-top-right-radius:10px;
+    -webkit-border-bottom-left-radius:10px;
+    -webkit-border-bottom-right-radius:10px;
+}
+
+.ui-dialog .ui-dialog-buttonpane button ui-button-text{
+    padding:0px;
+    margin:0px;
+    top:0px;
+    vertical-align:text-top;
+}
+
+.jDialog .colorpickerField {
+    font-size:11px;
+    top:-1px;
+}
+
+
+.colorpickerHolder .colorpicker input {
+    padding:1px;
+    margin-left:2px;
+    border:none;
+    border:solid 1px #FFF;
+    height:15px;
+    
+    border-radius:0px;
+    -moz-border-radius:0px;
+    -webkit-border-top-left-radius:0px;
+    
+}

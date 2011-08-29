@@ -1,0 +1,176 @@
+#flowconfig{
+	position:relative;
+	margin:0px;
+	padding:0px;
+	left:0px;
+	width:100%;
+	z-index:5;
+
+}
+.ie7 #flowconfig{
+	width:933px;
+}
+#playerFormPlayer{
+	width:468px;
+	height:310px;
+	position:relative;
+	top:-551px;
+	float:right;
+	margin-right:23px;
+	z-index:11;
+}
+.ie7 #playerFormPlayer{
+	/*right:175px;
+	top:-507px;
+	width:378px;
+	height:248px;
+	overflow:hidden;*/
+	
+}
+#playerEditGeneralTab{
+	/*display:none;*/
+}
+#playerEditConfigTab{
+	/*display:none;*/
+}
+
+#player{
+	display:block;
+	width:100%;
+	height:100%; 
+	margin:0px; 
+	padding:0px;
+}
+
+/*TABS*/
+.ui-tabs {
+    border: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+	
+}
+.ui-tabs ul{
+	position:relative;
+	left:0px;
+}
+.ui-tabs .ui-tabs-nav {
+    padding: 0 0 0;
+    border: none;
+    font-size: 12px;
+}
+.ui-tabs .ui-tabs-panel {
+    background-color: #EBEBEB;
+    background-image: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.ui-corner-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background-color: #C1C1C1;
+    background-image: none;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: #444444;
+    text-decoration: none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background-color: #EBEBEB;
+    background-image: none;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #444444;
+    text-decoration: none;
+}
+.ui-widget-header {
+    background: #FFFFFF;
+}
+a {
+    border-width:0px;
+    border:none;
+}
+a:link {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+}
+
+.form-field-label2{
+}
+
+
+/*BUTTONS*/
+
+#playerEditTabs{
+	position:relative;
+	margin-top:30px;
+	
+}
+.playerEditTabs-list{
+	position:relative;
+	height:30px;
+
+}
+.playerEdit-buttons{
+	position:relative;
+	height:45px;
+	width:195px;
+	top:-50px;
+	margin-right:9px;
+	background:url(../images/player/bkg_btns.png) no-repeat;
+	float:right;
+}
+.playerEdit-buttons img{
+	position:relative;
+	float:left;
+	margin-right:5px;
+	padding-top:6px;
+	padding-left:5px;
+	cursor:pointer;
+}
+
+.playerEdit-label{
+	width:100%;
+	position:relative;
+	margin-bottom:10px;
+}
+
+.playerEdit-textarea{
+	width:99%;
+	position:relative;	
+	border-color: #CCCCCC;
+    border-width: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    height: 400px;
+   
+}
+.playerEdit-list #playerEditConfigTabTitle{
+	width:150px;
+	overflow:hidden;
+}
+
+.ui-widget textarea{
+	 font-size: 12px;
+	 font-weight:normal;
+}
+
+#flashContent{
+	z-index:1;
+}
+
+/*OTHERS*/
+

@@ -1,0 +1,226 @@
+		.home {
+			width:100%;
+			position:relative;
+			clear:both;
+			
+		}
+		.home-wrapper{
+			position:relative;
+			width:100%;
+			clear:both;
+			overflow-y:auto;
+			overflow-x:hidden;
+			background:#D2D2D2;
+			overflow-y:auto;
+		}
+		
+		.home-all{
+			position:relative;
+			width:990px;
+			margin-left:auto;
+			margin-right:auto;
+			clear:both;
+			overflow-y:auto;
+		}
+		.home-menu{
+			position:relative;
+			width:100%;
+			height:500px;
+			
+			margin-left:auto;
+			margin-right:auto;
+			clear:both;
+			overflow-y:hidden;
+			margin-top:0px;
+			
+		}
+		.home-menu img{
+			cursor:pointer;
+			margin-right:1px;
+			margin-bottom:5px;
+			position:relative;
+			width:242px;
+			height:162px;
+			float:left;	
+		}
+		.home-menu img:hover{
+			background:#FFF;
+			background:url(../images/home/item-bkg.gif) repeat-y;		
+		}
+
+		.home-pagination{
+			list-style:none;
+			padding:0px;
+			width:100px;
+			margin-left:auto;
+			margin-right:auto;
+			height:30px;
+			position:relative;
+			clear:both;
+		}
+		
+		
+		
+		
+		
+		
+		.anonymous-wrapper{
+			position:relative;
+			width:100%;
+			clear:both;
+			overflow-y:auto;
+			overflow-x:hidden;
+			background:#E6E6E6;
+			overflow-y:auto;
+		}
+		
+		.anonymous-all{
+			position:relative;
+			width:990px;
+			margin-left:auto;
+			margin-right:auto;
+			clear:both;
+			overflow-y:auto;
+		}
+		.anonymous-login-content{
+			background:url(../images/anonymous/bkg_login.png) no-repeat center;
+			width:990px;
+			height:300px;
+			margin-left:auto;
+			margin-right:auto;
+			margin-top:120px;
+			text-align:center;
+			padding-top:120px;
+			margin-bottom:150px;
+			position:relative;
+			
+		}
+		.anonymous-login-content-text{
+			width:330px;
+			position:relative;
+			margin-right:auto;
+			margin-left:auto;
+			left:-10px;
+			margin-top:4px;
+			
+
+		}
+		.anonymous-login-content-buttons{
+			width:330px;
+			position:relative;
+			margin-right:auto;
+			margin-left:auto;
+			left:-15px;
+			margin-top:20px;
+		}
+		.anonymous-login-content-buttons img{
+			margin-left:5px;
+			margin-right:5px;
+			cursor:pointer;
+		}
+		
+		.anonymous-register{
+			width:328px;
+			position:relative;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+			margin-top:70px;
+		}
+		.anonymous-register-text{
+			width:330px;
+			position:relative;
+			margin-right:auto;
+			margin-left:auto;
+			left:-10px;
+			margin-top:4px;
+			font-size:25px;
+			font-weight:normal;
+		}
+		.anonymous-register-form{
+			width:100%;
+			position:relative;
+			text-align:left;
+			margin-bottom:100px;
+		}
+		.anonymous-register-label{
+			position:relative;
+			text-align:left;
+			font-size:12px;
+			font-weight:bold;
+		}
+		.anonymous-register-labelInfo{
+			font-size:11px;
+			color:#A3A98D;
+			margin-bottom:10px;
+			position:relative;
+		}
+		.anonymous-register-input input{
+			text-align:left;
+			width:100%;
+			height:20px;
+			border:inset #636363 1px;	
+			
+			border-radius:5px;	
+			-moz-border-radius: 5px;
+    		-webkit-border-radius: 5px;
+			padding:5px;
+			margin-bottom:5px;
+			
+			
+		}
+		.anonymous-register select{
+			width:200px;
+			padding:5px;
+			position:relative;
+			margin-bottom:15px;
+		}
+		.anonymous-register-submit{
+			text-align:center;
+			width:100%;
+			margin-bottom:20px;
+			position:relative;
+		}
+		.anonymous-register-submit button{
+			width:148px;
+			height:42px;
+			position:relative;
+			background:url(../images/anonymous/btn_register.png) no-repeat;
+			padding:0px;
+			margin:0px;
+			border:none;
+			margin-left:auto;
+			margin-right:auto;
+			cursor:pointer;
+		}
+		
+		.anonymous-nopermission{
+			width:328px;
+			position:relative;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+			margin-top:100px;
+		}
+		.anonymous-nopermission-info{
+			font-size:28px;
+			color:#B8B8B8;
+			margin-bottom:10px;
+			margin-top:10px;
+		}
+		.anonymous-nopermission-msg{
+			font-size:18px;
+			color:#B8B8B8;
+			margin-bottom:20px;
+		}
+		.anonymous-nopermission-msg a{
+			color:#0099FF;
+			text-decoration:underline;
+		}
+		.anonymous-register-hollybyte{
+			position:relative;
+			width:100%;
+			text-align:center;
+			margin-bottom:100px;
+		}
+		

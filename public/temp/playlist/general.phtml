@@ -1,0 +1,59 @@
+<div class="HB-Playlist-Tab-General" id="tabGeneralContent">
+    <form name="setProgram" id="formProgram">
+        <div class="HB-Playlist-Form-Data">
+            <div class="HB-Playlist-Form-Name">
+                <div class="label"> NAME</div>
+                <span id="programName"></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="HB-Playlist-Form-Name">
+            <div class="label"> TITLE</div>
+            <input class="gwt-TextBox" type="text" name="programTitle" id="programTitle">
+        </div>
+        <div class="clear"></div>
+        <div class="HB-Playlist-Form-Data" style="margin-top: 5px;">
+            <div class="HB-Playlist-Form-Txtarea">
+                <div class="label"> DESCRIPTION</div>
+                <textarea name="programDesc" id="programDesc"></textarea>
+            </div>
+        </div>
+    </form>
+    <div class="clear"></div>
+    <div class="HB-Playlist-General-Bottom">
+        <div class="HB-Playlist-Splash">
+            <img id="splash" src="images/program/playlist_default.jpg" alt="splash" />
+        </div>
+        <div class="HB-Playlist-Upload">
+            <form id="splashPlaylist" action="/upload/file" method="POST" enctype="multipart/form-data">
+                <label for="playlistsFileFile">
+                    File:
+                </label>
+                <input type="file" name="playlistFileFile" id="playlistsFileFile" size="45" style="margin-left:16px;"/>
+                <br />
+                <input type="submit" value="Upload" style="margin-left: 278px;"/>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="HB-Playlist-Form-Data">
+        <div class="HB-Playlist-Date-Label">
+            <div class="label">
+                CREATED:
+                <span id="programDate"></span>
+            </div>
+        </div>
+        <div class="HB-Playlist-Date">
+            <div class="label" id="programTime">H:M:S</div>
+        </div>
+        <div class="HB-Playlist-Date-Label">
+            <div class="label">
+                UPDATED:
+                <span id="programUpdate"></span>
+            </div>
+        </div>
+        <div class="HB-Playlist-Date">
+            <div class="label" id="programUptime">H:M:S</div>
+        </div>
+    </div>
+</div>

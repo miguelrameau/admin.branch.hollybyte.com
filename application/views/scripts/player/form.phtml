@@ -1,0 +1,253 @@
+<div class="wrapper">
+    <div class="all">
+        <?php //print_r($this->entity);?>
+        <div id="playerEditTabs">
+            <ul class="playerEditTabs-list">
+                <li>
+                    <a href="#playerEditGeneralTab">GENERAL</a>
+                </li>
+                <li id="playerEditConfigTabTitle">
+                    <a href="#playerEditConfigTab">CONFIG</a>
+                </li>
+            </ul>
+            <div class="playerEdit-buttons">
+                <img src="/images/player/btn_save.png" id="btnSave"/>
+                <a href="/player">
+                    <img src="/images/player/btn_back.png" />
+                </a>
+            </div><!--cierre playerEdit-buttons-->
+            
+            <div id="playerEditGeneralTab">
+                <form id="playerForm">
+                    <div class="form-field-box">
+                        <div class="form-field-label">
+                            ID*
+                        </div>
+                        <input id="playerEditFormId" name="playerEditFormId" class="form-field-input" type="text"/>
+                    </div><!-- cierre siteEdit-right-element -->
+                    <div class="form-field-box">
+                        <div class="form-field-label">
+                            TYPE*
+                        </div>
+                        <select id="playerEditFormType" name="playerEditFormType" class="form-field-listbox"></select>
+                    </div><!-- cierre siteEdit-right-element -->
+                    <div class="form-field-box">
+                        <div class="form-field-label">
+                            PLAYER*
+                        </div>
+                        <select id="playerEditFormPlayer" name="playerEditFormPlayer" class="form-field-listbox"></select>
+                    </div><!-- cierre siteEdit-right-element -->
+                </form>
+                    <div class="player-form-upload">
+                        <div class="form-field-label">
+                            Logo*
+                        </div>
+                        <form id="logoPlayer" action="/upload/file" method="POST" enctype="multipart/form-data">
+                            <input type="file" name="playerLogoFile" id="playerLogoFile" size="25" />
+                            <input type="submit" value="Send Logo" />
+                        </form>
+                    </div>
+                    <div class="player-form-upload">
+                        <div class="form-field-label">
+                            Play*
+                        </div>
+                        <form id="playPlayer" action="/upload/file" method="POST" enctype="multipart/form-data">
+                            <input type="file" name="playLogoFile" id="playLogoFile" size="25" />
+                            <input type="submit" value="Send Play" />
+                        </form>
+                    </div>
+                    <?php if(!empty($this->entity["created"]) ):
+                    ?>
+                    <div class="form-field-box">
+                        <div class="form-field-label">
+                            CREATED*
+                        </div>
+                        <input id="playerEditFormCreatedValue" name="playerEditFormCreatedValue" type="hidden"/>
+                        <input id="playerEditFormCreated" name="playerEditFormId" class="form-field-input playerEditFormCreated" type="text" disabled="true"/>
+                    </div><!-- cierre siteEdit-right-element -->
+                    <?php endif;?>
+                    <?php if(!empty($this->entity["updated"]) ):
+                    ?>
+                    <div class="form-field-box">
+                        <div class="form-field-label">
+                            UPDATED*
+                        </div>
+                        <input id="playerEditFormUpdatedValue" name="playerEditFormUpdatedValue"  type="hidden"/>
+                        <input id="playerEditFormUpdated" name="playerEditFormUpdated" class="form-field-input playerEditFormUpdated" type="text" disabled="true"/>
+                    </div><!-- cierre siteEdit-right-element -->
+                    <?php endif;?>
+                    <input id="playerEditFormRegion" name="playerEditFormRegion" type="hidden" value="" />
+            </div><!--cierre playerEditGeneralTab -->
+            <div id="playerEditConfigTab">
+                <div id="playerEditConfigFlow">
+                    <div id="fb-root"></div>
+                    <div id="flashContent">
+                        <h1>You need at least Flash Player 9.0 to view this page.</h1>
+                        <p>
+                            <a href="http://www.adobe.com/go/getflashplayer">
+                            <img src="https://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+                            </a>
+                        </p>
+                    </div>
+                    <div id="playerFormPlayer">
+                        <a id="player" style="display:block;width:100%;height:100%; margin:0px; padding:0px;"> </a>
+                    </div><!--cierre assetlistPlayer-->
+                </div>
+                <div id="playerEditConfigJs">
+                    <label for="playerEdit-label" class="playerEdit-label">
+                        CSS</label>
+                    <textarea class="playerEdit-textarea" id="playerEditFormCss" name="playerEditFormCss"></textarea>
+                </div>
+            </div><!--cierre playerEditConfigTab-->
+        </div>
+        <!--cierre playerEditTabs-->
+    </div><!--cierre all-->
+</div><!--cierre wrapper-->
+<script type="text/javascript">
+    //Dynamic publishing with swfObject
+    var region = '<?php echo $this->region;?>';
+    var repo = getRepoByRegion(region);
+    var flashObj;
+    //A 'name' attribute with the same value as the 'id' is REQUIRED for Chrome/Mozilla browsers
+    swfobject.embedSWF("/swf/configurador.swf", "flashContent", "990", "650", "9.0", null, null, {
+        swliveconnect : "true"
+    }, {
+        name : "flowconfig",
+        id : "flowconfig",
+        wmode: "transparent"
+    }, loadedApp);
+    function loadedApp(status) {
+        if(status.success) {
+            flashObj = status.ref;
+        }
+    }
+    
+    var swfPlayer = "/swf/flowplayer.commercial-3.2.7.swf";
+    
+    flowplayer("player", swfPlayer, {
+        "key" : '#@0b3272bb43eff43967a',
+        "play" : {
+            "url" : "http://<?php echo $this->repo;?>/public/players/img/play.png",
+            "width" : 78,
+            "height" : 78
+        },
+        "logo" : {
+            "url" : "http://<?php echo $this->repo;?>/public/players/img/logo.png",
+            "fullscreenOnly" : false,
+            "displayTime" : 0,
+            "linkUrl" : "http://www.hollybyte.com"
+        },
+        "clip" : {
+            "autoPlay" : true,
+            "autoBuffering" : true,
+            "url" : "http://<?php echo $this->repo;?>/public/players/img/play.png"
+        },
+        "plugins" : {
+            "controls" : {
+                "url" : "http://<?php echo $this->repo;?>/public/players/flowplayer/swf/flowplayer.controls-3.2.5.swf",
+                "autoHide" : {
+                    "enabled" : true,
+                    "fullscreenOnly" : false,
+                    "hideDelay" : 1019,
+                    "hideDuration" : 887,
+                    "hideStyle" : "move",
+                    "mouseOutDelay" : 500
+                },
+                "backgroundColor" : "rgba(46, 46, 46, 0)",
+                "backgroundGradient" : "none",
+                "border" : "0px",
+                "borderColor" : "rgba(0, 0, 0, 1)",
+                "borderRadius" : 30,
+                "borderWidth" : 0,
+                "bottom" : 0,
+                "bufferColor" : "rgba(33, 33, 33, 1)",
+                "bufferGradient" : "none",
+                "builtIn" : false,
+                "buttonColor" : "#ffffff",
+                "buttonOverColor" : "rgba(41, 41, 41, 1)",
+                "display" : "block",
+                "durationColor" : "rgba(0, 153, 255, 1)",
+                "fastBackward" : false,
+                "fastForward" : true,
+                "fullscreen" : true,
+                "height" : 36,
+                "left" : "50pct",
+                "margins" : [2, 6, 2, 12],
+                "mute" : true,
+                "name" : "controls",
+                "opacity" : 1,
+                "play" : true,
+                "playlist" : false,
+                "progressColor" : "rgba(0, 153, 255, 1)",
+                "progressGradient" : "none",
+                "scrubber" : true,
+                "scrubberBarHeightRatio" : 1,
+                "scrubberHeightRatio" : 0.5,
+                "sliderBorder" : "1px solid rgba(128, 128, 128, 0.7)",
+                "sliderColor" : "rgba(23, 23, 23, 1)",
+                "sliderGradient" : "none",
+                "slowBackward" : false,
+                "slowForward" : true,
+                "spacing" : {
+                    "all" : 2,
+                    "time" : 6,
+                    "volume" : 8
+                },
+                "stop" : false,
+                "time" : true,
+                "timeBgColor" : "rgba(0, 0, 0, 0)",
+                "timeBgHeightRatio" : 1.2,
+                "timeBorder" : "0px solid rgba(0, 0, 0, 0.3)",
+                "timeBorderRadius" : 20,
+                "timeColor" : "#ffffff",
+                "timeFontSize" : 12,
+                "timeSeparator" : " ",
+                "tooltipColor" : "rgba(255, 255, 255, 1)",
+                "tooltipTextColor" : "rgba(51, 51, 51, 1)",
+                "tooltips" : {
+                    "buttons" : true,
+                    "fullscreen" : "Fullscreen",
+                    "fullscreenExit" : "Exit fullscreen",
+                    "marginBottom" : 5,
+                    "mute" : "Mute",
+                    "next" : "Next",
+                    "pause" : "Pause",
+                    "play" : "Play",
+                    "previous" : "Previous",
+                    "scrubber" : true,
+                    "slowMotionBwd" : "Slow backward",
+                    "slowMotionFBwd" : "Fast backward",
+                    "slowMotionFFwd" : "Fast forward",
+                    "slowMotionFwd" : "Slow forward",
+                    "stop" : "Stop",
+                    "unmute" : "Unmute",
+                    "volume" : true
+                },
+                "volume" : true,
+                "volumeBarHeightRatio" : 0.80000000000000004,
+                "volumeBorder" : "1px solid rgba(128, 128, 128, 0.7)",
+                "volumeColor" : "rgba(0, 153, 255, 1)",
+                "volumeSliderColor" : "rgba(51, 51, 51, 1)",
+                "volumeSliderGradient" : "none",
+                "volumeSliderHeightRatio" : 0.40000000000000002,
+                "width" : "100pct",
+                "zIndex" : 10
+            }
+        }
+    });
+
+</script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready( function() {
+        HB2.admin.player.init();
+        <?php if(isset($this->entity)): ?>
+        var entity = <?php echo json_encode($this->entity);?>;
+        console.info(entity.config);
+            HB2.admin.player.loadData(entity);
+        <?php else:?>
+            HB2.admin.player.loadData();
+        <?php endif;?>
+        HB2.admin.player.account = <?php echo json_encode($this->account);?>;
+        $('#playerEditFormRegion').val("<?php echo $this->region;?>");
+    });
+</script>

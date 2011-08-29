@@ -1,0 +1,64 @@
+<div class="hb-assetform-tabTable-subtitles" id="tabSubtitlesContent">
+    <div class=
+    "hb-assetform-tabTable-metadata-header assetEdit-tabTable-metadata-header-title">
+        <img src="/images/assetedit/ico_metadata.png" class=
+        "hb-assetform-tabTable-metadata-header-title-ico" alt="Image" />
+        <div class="hb-assetform-tabTable-metadata-header-title-lbl">
+            SUBTITLES
+        </div>
+        <a class="hb-assetform-tabTable-metadata-header-title-help"></a>
+    </div>
+    <div class="hb-assetform-tabTable-metadata-header-right">
+        <img src="/images/assetedit/btn_add.png" id="subtitleAddSubtitle"/>
+    </div>
+    <table id="subtitlesTable" class="display dataTable" border="0" cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th style="width: 210px;">TYPE</th>
+                <th style="width: 110px;">LANGUAGE</th>
+                <th style="width: 210px;">PATH</th>
+                <th style="width: 136px;">DOWNLOAD/DELETE</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div id="subtitleEditDialog" title="Metavalue" class="jDialog">
+    <form id="subtitleForm" action="/upload/file" method="POST" enctype="multipart/form-data">
+        <div class="line">
+            <label for="subtitleType" class="line-lbl">
+                Type
+            </label>
+            <select name="subtitleType" id="subtitleType" >
+                <option value="SUBRIP">Subrip</option>
+                <option value="TIMED_TEXT">Timed Text</option>
+            </select>
+        </div>
+        <div class="line">
+            <div id="contentValueType">
+                <label for="valueType" class="line-lbl">
+                    Lang
+                </label>
+                <select name="subtitleLang" id="subtitleLang" >
+                    <option value="EN">EN</option>
+                    <option value="ES">ES</option>
+                </select>
+            </div>
+        </div>
+        <div class="line" id="subtitleFileBlock">
+            <input type="hidden" name="subtitleFileValue" id="subtitleFileValue" />
+            <input type="hidden" name="subtitleFileUploading" id="subtitleFileUploading" value="false"/>
+            <input type="file" name="subtitleFileFile" id="subtitleFileFile" />
+            <button type="submit" id="subtitleUploadFile">
+                Upload File
+            </button>
+        </div>
+    </form>
+    <div class="clear">
+    </div>
+</div>
+<div id="subtitleDeleteDialog" title="Delete Subtitle?" class="jDialog">
+    <p>
+        <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?
+    </p>
+</div>
+

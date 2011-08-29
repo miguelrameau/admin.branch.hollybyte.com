@@ -1,0 +1,119 @@
+<div class="hb-header">
+    <div class="hb-header-top">
+        <div class="hb-header-top-content">
+            <img id="headerFaq" src="<?php echo $this->staticRepo;?>/img/header/faq.png" alt="FAQ" />
+            FAQ
+        </div>
+    </div>
+    <div class="hb-header-bottom">
+        <div class="hb-header-bottom-content">
+            <div class="hb-header-bottom-content-logo">
+                <img id="headerLogo" src="<?php echo $this->staticRepo;?>/img/header/logo.jpg" alt="logo" />
+            </div>
+            <div class="hb-header-bottom-content-logotext">
+                Online Video Platform |
+                Welcome to HyperVideo
+            </div>
+            <div class="hb-header-bottom-content-right">
+                <button id="upload" class="hb-header-bottom-content-right-button"
+                onclick="javascript:popup('hollybyte_upload', '/upload', 600, 400)"></button>
+                <div class="hb-header-bottom-content-right-user">
+                    <div class="hb-header-bottom-content-right-user-txt">
+                        <span id="userName"> <?php echo $this->userName;?></span>
+                    </div>
+                    <select id="accounts" name="accounts" class="hb-header-bottom-content-right-user-select" onChange="onChangeAccount()">
+                        <?php if (is_array($this->accounts)):
+                        ?>
+                        <?php foreach ($this->accounts as $account):
+                        ?>
+                        <?php if ($account == $this->selectedAccount):
+                        ?>
+                        <option selected="true" value="<?php echo $account;?>"><?php echo $account;?></option>
+                        <?php else:?>
+                        <option value="<?php echo $account;?>"><?php echo $account;?></option>
+                        <?php endif;?>
+                        <?php endforeach;?>
+                        <?php endif;?>
+                    </select>
+                    <div class="hb-header-bottom-content-right-user-btns">
+                        <a href="/setting">
+                        <img id="settings" alt"settings" class="hb-header-bottom-content-right-user-btns-settings" src="<?php echo $this->staticRepo;?>/img/header/btn_settings.png" />
+                        </a>
+                        <a id="logout" href="/auth/logout"
+                        class="hb-header-bottom-content-right-user-btns-logout"> </a>
+                    </div>
+                </div>
+                <div class="hb-header-bottom-content-right-userLogo">
+                    <img id="userLogo" src="<?php echo $this->staticRepo;?>/img/header/img_user_example.jpg" alt="User" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hb-nav">
+    <div class="hb-nav-content">
+        <div class="hb-nav-btnlist">
+            <a href="/home">
+            <img src="<?php echo $this->staticRepo;?>/img/nav/btn_home.png" title="Home"/>
+            </a>
+            <img id="btnBack" src="<?php echo $this->staticRepo;?>/img/nav/btn_back.png" title="Back"//>
+            <img id="btnReload" src="<?php echo $this->staticRepo;?>/img/nav/btn_reload.png" title="Refresh"//>
+        </div>
+        <ul class="hb-nav-menu">
+            <?php if($this->currController != "asset"):
+            ?>
+            <li class="hb-nav-menu-el">
+                <a href="asset">MANAGE</a>
+            </li>
+            <?php else:?>
+            <li class="hb-nav-menu-elOn">
+                MANAGE
+            </li>
+            <?php endif;?>
+
+            <?php if($this->currController != "playlist"):
+            ?>
+            <li class="hb-nav-menu-el">
+                <a href="playlist">PROGRAM</a>
+            </li>
+            <?php else:?>
+            <li class="hb-nav-menu-elOn">
+                PROGRAM
+            </li>
+            <?php endif;?>
+
+            <?php if($this->currController != "player"):
+            ?>
+            <li class="hb-nav-menu-el">
+                <a href="player">PLAYERS</a>
+            </li>
+            <?php else:?>
+            <li class="hb-nav-menu-elOn">
+                PLAYERS
+            </li>
+            <?php endif;?>
+
+            <?php if($this->currController != "site"):
+            ?>
+            <li class="hb-nav-menu-el">
+                <a href="site">SITES</a>
+            </li>
+            <?php else:?>
+            <li class="hb-nav-menu-elOn">
+                SITES
+            </li>
+            <?php endif;?>
+
+            <?php if($this->currController != "connector"):
+            ?>
+            <li class="hb-nav-menu-el">
+                <a href="connector">CONNECTORS</a>
+            </li>
+            <?php else:?>
+            <li class="hb-nav-menu-elOn">
+                CONNECTORS
+            </li>
+            <?php endif;?>
+        </ul>
+    </div>
+</div>

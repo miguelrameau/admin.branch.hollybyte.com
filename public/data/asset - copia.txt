@@ -1,0 +1,1312 @@
+[
+{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},
+{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},
+{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},
+{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},
+{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},
+{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},
+{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},
+{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},
+{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+},
+{ "id" : "4dda647d492d4c432b000000", "contents" : [
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-240p.mp4",
+                "media" : "mp4-240p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-240p.mp4",
+                "duration" : 78042,
+                "size" : 3171457,
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "188008",
+                        "framerate" : "24",
+                        "width" : "426",
+                        "height" : "240",
+                        "duration" : "78042",
+                        "size" : "1834059"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : "2011-05-23T13:43:59Z"
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "mp4-360p.mp4",
+                "media" : "mp4-360p",
+                "format" : "MP4",
+                "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/mp4-360p.mp4",
+                "duration" : "78042",
+                "size" : "4033819",
+                "video" : {
+                        "codec" : "AVC",
+                        "bitrate" : "276798",
+                        "framerate" : "24",
+                        "width" : "640",
+                        "height" : "360",
+                        "duration" : "78042",
+                        "size" : "2700226"
+                },
+                "audio" : {
+                        "codec" : "AAC LC",
+                        "bitrate" : "132300",
+                        "sampling" : "48000",
+                        "duration" : "78016",
+                        "size" : "1284399"
+                },
+                "created" : 2011-05-23T13:43:59Z"
+        }
+        ], "created" : "2011-05-23T13:43:25Z", "groups" : [
+        {
+                "type" : "VIDEO",
+                "name" : "rtmp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtmp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "adobe",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/adobe.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "apple",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/apple.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "rtsp",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/rtsp.smil",
+                "contents" : [
+                        "mp4-240p.mp4",
+                        "mp4-360p.mp4"
+                ]
+        },
+        {
+                "type" : "VIDEO",
+                "name" : "iphone",
+                "smil" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/iphone.smil",
+                "contents" : [
+                        "ios-320p.mp4",
+                        "ios-640p.mp4"
+                ]
+        }
+], "name" : "remolino.mp4", "secure" : false, "source" : { "type" : "VIDEO", "name" : "remolino.mp4", "format" : "MP4", "path" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/source.mp4", "duration" : "78078", "size" : "4631635", "video" : { "codec" : "AVC", "bitrate" : "372537", "framerate" : "29", "width" : "640", "height" : "360", "duration" : "78078", "size" : "3635873" }, "audio" : { "codec" : "AAC LC", "bitrate" : "96000", "sampling" : "44100", "duration" : "77996", "size" : "936038" }, "created" : "2011-05-23T13:43:25Z" }, "splash" : "acc/warnermusicspain/as/4dda647d492d4c432b000000/splash.jpg", "tags" : [ "Artista 1", "Artista 2" ], "type" : "VIDEO", "version" : "1" 
+}
+]

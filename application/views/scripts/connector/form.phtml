@@ -1,0 +1,83 @@
+<div class="connectorEdit">
+    <div class="assetlist-assetMenu">
+        <div class="assetlist-assetMenu-content">
+            <div class="assetEdit-stdcrumbs">
+                <div class="assetEdit-crumbs-before"> EDIT CONNECTOR</div>
+                <img src="/images/common/crumb.png" class="assetEdit-crumbs-crumb" />
+                <div class="assetEdit-crumbs-current">
+                </div>
+            </div><!-- cierre assetEdit-stdcrumbs -->
+        </div><!-- cierre assetlist-assetMenu-content -->
+    </div><!-- cierre assetlist-assetMenu -->
+    <div class="allUnderline">
+        <div class="connectorEdit-left">
+            <div class="connectorEdit-left-element">
+                <img id="connectorSave" src="/images/common/save.png" />
+            </div>
+            <div class="connectorEdit-left-element">
+                <img id="connectorClear" src="/images/common/clear.png" />
+            </div>
+            <div class="connectorEdit-left-element">
+                <img id="connectorBack" src="/images/common/back.png" />
+            </div>
+        </div><!-- cierre connectorEdit-left -->
+        <div class="connectorEdit-right">
+            <form id="connectorForm">
+                <div class="connectorEdit-right-element">
+                    <div class="gwt-Label"> NAME</div>
+                    <input id="id" name="id" class="connectorEdit-right-element-txt" type="text">
+                </div><!-- cierre connectorEdit-right-element -->
+                <div class="connectorEdit-right-element">
+                    <div class="gwt-Label"> DESCRIPTION</div>
+                    <textarea id="description" name="description" class="connectorEdit-right-element-area"></textarea>
+                </div><!-- cierre connectorEdit-right-element -->
+                <div class="connectorEdit-right-element">
+                    <div class="gwt-Label"> TYPE</div>
+                    <select id="type" name="type" class="gwt-ListBox">
+                        <option value="FTP">FTP</option>
+                        <option value="YOUTUBE">Youtube</option>
+                        <option value="TWITTER">Twitter</option>
+                        <option value="FACEBOOK">Facebook</option>
+                    </select>
+                </div><!-- cierre connectorEdit-right-element -->
+                <div style="" class="connectorEdit-right-element">
+                    <div id="usernameLayer">
+                        <div class="gwt-Label"> USERNAME</div>
+                        <input id="username" name="username" class="connectorEdit-right-element-txt" type="text" />
+                    </div>
+                    <div id="passwordLayer">
+                        <div class="gwt-Label"> PASSWORD</div>
+                        <input id="password" name="password" class="connectorEdit-right-element-txt" type="password" />
+                    </div>
+                    <div id="serverLayer">
+                        <div class="gwt-Label"> SERVER</div>
+                        <input id="server" name="server" class="connectorEdit-right-element-txt" type="text" />
+                    </div>
+                    <div id="portLayer">
+                        <div class="gwt-Label"> PORT</div>
+                        <input id="port" name="port" class="connectorEdit-right-element-txt" type="text" value="21">
+                        </input>
+                    </div>
+                    <div id="directoryLayer">
+                        <div class="gwt-Label"> DIRECTORY</div>
+                        <input id="dir" name="dir" class="connectorEdit-right-element-txt" type="text" />
+                    </div>
+                </div><!-- cierre connectorEdit-right-element -->
+                <input id="created" name="created" type="hidden" />
+                <input id="version" name="version" type="hidden" />
+            </form>
+            <div class="test-buttom" style="display: none;"><a href="" id="testBt"><img src="/images/connector/grant_permissions.png" alt="TEST BUTTOM" /></a></div>
+        </div><!-- cierre connectorEdit-right -->
+        <div class="clear">
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+<script type="text/javascript" charset="utf-8">
+$(document).ready( function() {
+<?php if(isset($this->entity)): ?>var entity = jQuery.parseJSON('<?php echo json_encode($this->entity) ?>');<?php else:?>var entity = {};<?php endif;?>
+    // Init Connector Edit
+    initConnectorEdit(entity);
+    });
+</script>

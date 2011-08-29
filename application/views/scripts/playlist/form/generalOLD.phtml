@@ -1,0 +1,61 @@
+<div class="program-right-tab-general" id="tabGeneralContent">
+    <form name="setProgram" id="formProgram">
+        <div class="program-right-form-data">
+            <div class="program-right-form-data-name">
+                <div class="gwt-Label"> NAME</div>
+                <span id="programName"></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="program-right-form-data-name">
+            <div class="gwt-Label"> TITLE</div>
+            <input class="gwt-TextBox" type="text" name="programTitle" id="programTitle">
+        </div>
+        <div class="clear"></div>
+        <div class="program-right-form-data" style="margin-top: 5px;">
+            <div class="program-right-form-data-txtarea">
+                <div class="gwt-Label"> DESCRIPTION</div>
+                <textarea class="gwt-TextArea" name="programDesc" id="programDesc"></textarea>
+            </div>
+        </div>
+    </form>
+    <div class="clear"></div>
+    <div class="program-right-form-footer">
+        <div class="program-right-form-image">
+            <img id="program-image" src="images/program/playlist_default.jpg" alt="splash" style="width:215px; height:122px;" />
+        </div>
+        <div class="program-right-form-upload">
+            <form id="splashPlaylist" action="/upload/file" method="POST" enctype="multipart/form-data">
+                <label for="playlistsFileFile">
+                    File:
+                </label>
+                <input type="file" name="playlistFileFile" id="playlistsFileFile" size="45" style="margin-left:16px;"/>
+                <br />
+                <input type="submit" value="Upload" style="margin-left: 278px;"/>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="program-right-form-data">
+        <div class="program-right-form-data-order">
+            <div class="gwt-Label">
+                CREATED:
+                <span id="programDate"></span>
+            </div>
+        </div>
+        <div class="program-right-form-data-order2">
+            <!--<div class="gwt-Label">H:M:S <span
+            id="programTime"></span></div>-->
+            <div class="gwt-Label" id="programTime">H:M:S</div>
+        </div>
+        <div class="program-right-form-data-order">
+            <div class="gwt-Label">
+                UPDATED:
+                <span id="programUpdate"></span>
+            </div>
+        </div>
+        <div class="program-right-form-data-order2">
+            <div class="gwt-Label" id="programUptime">H:M:S</div>
+        </div>
+    </div>
+</div>

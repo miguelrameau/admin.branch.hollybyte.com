@@ -1,0 +1,115 @@
+<div class="anonymous-wrapper">
+    <div class="anonymous-all">
+        <div class="anonymous-register">
+            <img src="/images/anonymous/login-title.png" />
+            <div class="anonymous-register-text">
+                Register
+            </div>
+            <form id="registryForm" class="anonymous-register-form">
+                <div class="anonymous-register-label">
+                    Provider
+                </div>
+                <div >
+                    <img id="providerImg" />
+                    <span id="providerTxt"></span>
+                </div>
+                <div id="usernameDiv">
+                    <div class="anonymous-register-label">
+                        Username*
+                    </div>
+                    <div class="anonymous-register-input">
+                        <input type="text" id="username" name="username" />
+                    </div>
+                    <div class="anonymous-register-label">
+                        Password*
+                    </div>
+                    <div class="anonymous-register-input">
+                        <input type="password" id="password" name="password" />
+                    </div>
+                    <div class="anonymous-register-label">
+                        Repeat Password*
+                    </div>
+                    <div class="anonymous-register-input">
+                        <input type="password" id="password2" name="password2" />
+                    </div>
+                </div>
+                <div class="anonymous-register-label">
+                    Name*
+                </div>
+                <div class="anonymous-register-input">
+                    <input type="text" id="name" name="name" />
+                </div>
+                <div class="anonymous-register-label">
+                    Email*
+                </div>
+                <div class="anonymous-register-input">
+                    <input type="text" id="email" name="email" />
+                </div>
+                <div id="dataDiv">
+                    <div class="anonymous-register-label">
+                        Gender*
+                    </div>
+                    <div class="anonymous-register-input">
+                        <select id="gender" name="gender">
+                            <option value="">Select Gender</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </div>
+                    <div class="anonymous-register-label">
+                        Language*
+                    </div>
+                    <div class="anonymous-register-input">
+                        <select id="language" name="language">
+                            <option value="">Select Language</option>
+                        </select>
+                    </div>
+                    <div class="anonymous-register-label">
+                        Country*
+                    </div>
+                    <div class="anonymous-register-input">
+                        <select id="country" name="country">
+                            <option value="">Select Country</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="anonymous-register-label">
+                    Account*
+                </div>
+                <div class="anonymous-register-input">
+                    <input type="text" id="account" name="account" />
+                </div>
+                <div id="regionDiv">
+                    <div class="anonymous-register-label">
+                        Region*
+                    </div>
+                    <div class="anonymous-register-input">
+                        <select id="region" name="region">
+                            <option value="">Select Region</option>
+                            <option value="EU_W1">EU (Ireland)</option>
+                            <option value="US_E1">US (Virginia)</option>
+                            <option value="US_W1">US (Northern California)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="anonymous-register-labelInfo">
+                    *Required fields
+                </div>
+                <div class="anonymous-register-submit">
+                    <button class="anonymous-register-submit-btn" name="register" id="register" type="button"></button>
+                    <input class="anonymous-register-submit-clear" type="reset" name="clear" id="clear" value=""/>
+                </div>
+            </form>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" charset="utf-8">
+var registry = <?php echo json_encode($this->registry);?>;</script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        HB2.admin.registry.init();
+        HB2.admin.registry.setData(registry);
+    });
+
+</script>

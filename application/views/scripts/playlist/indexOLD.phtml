@@ -1,0 +1,113 @@
+<div class="all">
+    <div class="assetEdit-tabTable-metadata-header">
+        <div class="program-assetMenu-refresh">
+            <label>
+                REFRESH PROGRAM
+            </label>
+            <img src="images/assetlist/refresh.png" alt="refresh" id="refresh" />
+        </div>
+    </div>
+    <div class="program-content">
+        <div class="program-left">
+            <div class="program-left-table" id="program-left-table">
+            </div>
+        </div>
+        <div class="program-right">
+            <div class="program-right-menu">
+                <?php if(!empty($this->acl->resources["admin-playlist-btn-save"])):?> 
+                    <img src="images/program/btn_save.png" alt="save" class="program-right-menu-save" id="save-image" />
+                <?php endif;?>
+                <?php if(!empty($this->acl->resources["admin-playlist-btn-delete"])):?> 
+                    <img src="images/program/btn_delete.png" alt="delete" class="program-right-menu-delete" />
+                <?php endif;?>
+                
+                <?php if(!empty($this->acl->resources["admin-playlist-btn-add"])):?> 
+                    <img src="images/program/btn_playlist.png" alt="add-playlist" class="program-right-menu-subcat" />
+                <?php endif;?>
+            </div>
+            <div class="program-right-tabs">
+                <?php if(!empty($this->acl->resources["admin-playlist-tab-general"])):?>
+                    <div id="tabGeneral" class="program-right-tabs-elSelected">
+                        <img src="images/program/tabicon_info.png" alt="general"/>
+                        GENERAL
+                    </div>
+                <?php endif;?>
+                <?php if(!empty($this->acl->resources["admin-playlist-tab-metadata"])):?>
+                    <div id="tabMetadatas" class="program-right-tabs-el">
+                        <img src="images/program/tabicon_info.png" alt="metadatas"/>
+                        METADATAS
+                    </div>
+                <?php endif;?>
+                <?php if(!empty($this->acl->resources["admin-playlist-tab-asset"])):?>
+                    <div id="tabAssets" class="program-right-tabs-el">
+                        <img src="images/program/tabicon_assets.png" alt="assets"/>
+                        ASSETS
+                    </div>
+                <?php endif;?>
+                <div class="clear"></div>
+            </div>
+            <div class="program-right-form">
+                <?php echo $this->render('playlist/form/general.phtml');?>
+                <div class="clear"></div>
+                <?php echo $this->render('playlist/form/asset.phtml');?>
+                <div class="clear"></div>
+                <?php echo $this->render('playlist/form/metadata.phtml');?>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="newPlaylistDialog" title="Add new Playlist" class="jDialog">
+        <form id="newPlaylistForm" method="POST" enctype="application/json">
+            <div class="line">
+                <label for="playlistName" class="line-lbl">
+                    Name
+                </label>
+                <input type="text" name="playlistName" id="playlistName" />
+            </div>
+            <div class="line">
+                <label for="playlistTitle" class="line-lbl">
+                    Title
+                </label>
+                <input type="text" name="playlistTitle" id="playlistTitle" />
+            </div>
+            <div class="line">
+                <label for="playlistDesc" class="line-lbl">
+                    Description
+                </label>
+                <textarea id="playlistDesc" name="playlistDesc" cols="50" rows="4"></textarea>
+            </div>
+            <div class="line">
+                <label for="playlistCombo" class="line-lbl">
+                    Parent
+                </label>
+                <select id="playlistCombo" class="combo" name="playlistCombo" >
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="clear"></div>
+    <div id="playlistDeleteDialog" title="Delete Playlists?" class="jDialog">
+        <p>
+            <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>The selected playlist and its children will be . Are you sure?
+        </p>
+    </div>
+    <div class="clear"></div>
+    <div id="playlistUpdateDialog" title="Update Playlists" class="jDialog">
+        <p>
+            <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>The update operation was a success. Click accept to continue.
+        </p>
+    </div>
+    <div class="clear"></div>
+    <div id="removeAssetDialog" title="Remove Asset from playlists" class="jDialog">
+        <p>
+            <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>This items will be permanently deleted and cannot be recovered. Are you sure?.
+        </p>
+    </div>
+</div>
+<script type="text/javascript" charset="UTF-8">
+    $(document).ready( function() {
+        HB2.admin.playlist.init();
+        HB2.admin.playlist.load();
+    });
+</script>

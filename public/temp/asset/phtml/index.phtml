@@ -1,0 +1,130 @@
+<div class="wrapper">
+    
+    <div class="hb-asset-assetMenu">
+        <div class="hb-asset-assetMenu-content">
+            <div class="hb-asset-assetMenu-refresh" id="assetRefresh">
+                <label>
+                    ASSETLIST
+                </label>
+                <img src="images/assetlist/refresh.png">
+            </div><!--cierre hb-asset-assetMenu-refresh -->
+            <?php if(!empty($this->acl->resources["admin-asset-list-deploy"])):?>
+            <div class="hb-asset-assetMenu-deploy" id="assetDeploy">
+                <label>
+                    DEPLOY
+                </label>
+                <img src="images/assetlist/deploy.png">
+            </div>
+            <?php endif; ?>
+            <div class="hb-asset-assetMenu-search">
+                <div class="hb-asset-assetMenu-search-box">
+                    <input class="hb-asset-assetMenu-search-box-txt" type="text" id="inputSearch"/>
+                    <div class="hb-asset-assetMenu-search-box-clear">
+                    </div>
+                </div><!--cierre hb-asset-assetMenu-search-box-->
+                <div class="hb-asset-assetMenu-search-btn">
+                </div>
+            </div><!--cierre hb-asset-assetMenu-search-->
+        </div><!--cierre hb-asset-assetMenu-content-->
+    </div><!--cierre hb-asset-assetMenu-->
+
+    <div class="all">
+        <ul class="hb-asset-list" id="assetlist">
+            <!--            <div class="home-menu-page" id="assetlistPage1">-->
+            <!-- -->
+            <!--                -->
+            <!--            </div>cierre home-menu-page-->
+        </ul><!--cierre hb-asset-list-->
+
+        <div class="clear">
+        </div>
+
+    </div><!--cierre all-->
+
+    <div class="hb-asset-bottomContent">
+        <div class="hb-asset-bottom">
+            <div class="hb-asset-bottom-create">
+                <img
+                src="images/assetlist/icon_light.png"
+                class="hb-asset-bottom-create-img">
+                Crea tu playlist en la sección
+                <u>
+                    program
+                </u>
+            </div><!--cierre hb-asset-bottom-create -->
+            <div style="visibility: hidden;" class="hb-asset-pagination">
+                <div class="hb-asset-pagination-prev">
+                </div>
+                <div class="hb-asset-pagination-info">
+                    <div class="hb-asset-pagination-info-current" id="paginationCurrentPos">
+                        1
+                    </div>
+                    <div>
+                        de 1
+                    </div>
+                </div><!--cierre hb-asset-pagination-info-->
+                <div class="hb-asset-pagination-next">
+                </div>
+            </div><!--cierre hb-asset-pagination-->
+            <div class="hb-asset-bottom-help">
+                <img
+                src="images/assetlist/icon_question.png"
+                class="hb-asset-bottom-help-question">
+                ADD LIVE CONNECTION
+                <img
+                src="images/assetlist/icon_addlive.png"
+                class="hb-asset-bottom-help-addlive">
+            </div>
+        </div><!--cierre hb-asset-bottom-help-->
+        <div class="clear">
+        </div>
+    </div><!--cierre hb-asset-bottomContent-->
+    
+</div><!-- cierre wrapper -->
+
+<div id="assetlistPlayer">
+    
+    <a id="player" style="display:block;width:100%;height:100%;">
+    </a>
+</div><!--cierre assetlistPlayer-->
+<div id="assetlistEmbedDialog">
+     <textarea class="form-field-textarea" id="txtEmbed" style="width:100%; height:160px;"></textarea>
+</div>
+
+<div id="assetlistDeleteDialog">
+</div>
+
+<script type="text/javascript">
+    $(document).ready( function() {
+        // Init Delete Value Dialog
+        $('#assetlistPlayer').dialog({
+            autoOpen: false,
+            resizable: false,
+            width: 850,
+            height: 600,
+            closeText: 'close',
+            modal: true,
+            title:true
+
+        });
+    });
+    $( "#assetlistPlayer" ).dialog( "option", "dialogClass", 'assetlistPlayer' );
+    
+    $('#assetlistEmbedDialog').dialog({
+                autoOpen: false,
+                resizable: false,
+                width: 850,
+                height: 280,
+                closeText: 'close',
+                modal: true,
+                title:false
+
+        });
+        $( "#assetlistEmbedDialog" ).dialog( "option", "dialogClass", 'assetlistEmbedDialog' );
+        
+        
+        asset = new Scripts_AssetList('assetlist', <?php echo json_encode($this->account);?>);
+        asset.assetDeleteDialog = $('#assetlistDeleteDialog');
+        asset.appendAll();
+
+</script>

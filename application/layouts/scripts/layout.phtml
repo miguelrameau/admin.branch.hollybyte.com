@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Hollybyte Admin</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <script src="https://www.google.com/jsapi?key=ABQIAAAAXMoM_3yd1lBD_9AvFRvTcxR0SRroG4EB8hARaXhl-jHMO2igqBS617GOTfedTVY-Ml6-wK5hN8Gx4w" type="text/javascript"></script>
+        <script language="Javascript" type="text/javascript">
+            
+            google.load("jquery", "1.6.1");
+            google.load("jqueryui", "1.8.13");
+
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+        <script src="/js/css_browser_selector.js"></script>
+        <script src="/js/jquery/jquery.dataTables.js"></script>
+        <script src="/js/jquery/jquery.colorpicker.js"></script>
+        <!--<script src="http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js"></script>-->
+        <script src="/js/jquery/jquery.tools.tips.min.js"></script>
+        <script type="text/javascript">
+            /*
+             * In case we forget to remove console traces, create a dummy one for
+             IE and similar browsers.
+             */
+            
+            if( typeof window.console === "undefined") {
+                
+                window.console = {};
+                var i, max, funcs = ['log', 'debug', 'table', 'info', 'warn', 'error', 'assert', 'dir', 'dirxml', 'trace', 'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'profile', 'pro fileEnd', 'count'];
+                for( i = 0, max = funcs.length; i < max; i++) {
+                    console[funcs[i]] = function() {
+                    }
+                }
+            };
+            
+            function popup(id, url, pWidth, pHeight, heigthMax) {
+                if(heigthMax == true)
+                    pHeight = screen.height - (screen.height / 5);
+
+                var left = (screen.width / 2) - (pWidth / 2);
+                var top = (screen.height / 2) - (pHeight / 2);
+                win = window.open(url, "popup_" + id, "dependent=yes,resizable=yes,directories=no,location=no,menubar=no,scrollbars=yes,statusbar=no,tittlebar=no,width=" + pWidth + ",height=" + pHeight + ",left=" + left + ",top=" + top);
+                win.focus();
+            }
+
+            $(document).ready(function() {
+                $('#loading-wrapper')
+                .hide()  // hide it initially
+                .ajaxStart( function() {
+                $(this).show();
+                })
+                .ajaxStop(function() {
+                    $(this).hide();
+                });
+                $("[title]").tooltip({
+                    position : "top center",
+                    opacity : 0.7
+
+                });
+
+            });
+
+        </script>
+        <script src="/js/jquery/jquery.json-2.2.min.js" type="text/javascript"></script>
+        <script src="/js/Namespace.js" type="text/javascript"></script>
+        <script src="/js/common.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            HB2.admin.acl = <?php echo json_encode($this->acl);?>;
+            HB2.admin.accountType = "<?php echo ($this->accountType);?>";
+            HB2.admin.account = "<?php echo ($this->account);?>";
+            HB2.admin.staticRepo = "<?php echo $this->staticRepo;?>";
+            HB2.admin.repo = "<?php echo $this->repo;?>";
+        </script>
+        <?php echo $this->headScript();?>
+
+        <link type="text/css" rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/base/jquery-ui.css" id="theme" />
+        <link type="text/css" href="/css/custom-theme/jquery-ui-1.8.13.custom.css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="/css/header.css" />
+        <link type="text/css" rel="stylesheet" href="/css/home.css" />
+        <link type="text/css" rel="stylesheet" href="/css/common.css" />
+        <link type="text/css" rel="stylesheet" href="/css/footer.css" />
+        <link type="text/css" rel="stylesheet" href="/css/hbcommon.css" />
+        <link type="text/css" rel="stylesheet" href="/css/table.css" />
+        <link type="text/css" rel="stylesheet" href="/css/fileupload/jquery.fileupload-ui.css" />
+        <link type="text/css" rel="stylesheet" href="/css/jquery.treeTable.css" />
+        <link type="text/css" rel="stylesheet" href="/css/style.css" />
+        <link type="text/css" rel="stylesheet" href="/css/colorpicker.css" />
+        <?php echo $this->headLink();?>
+    </head>
+    <body>
+        <?php echo $this->render('header.phtml');?>
+        <?php echo $this->layout()->content;?>
+        <?php echo $this->render('footer.phtml');?>
+        <div id="loading-wrapper" class="loading-wrapper">
+            <div id="loading" class="loading">
+                <img src="<?php echo $this->staticRepo;?>/img/common/loader.gif" />
+            </div><!--cierre loading-->
+        </div>
+        
+    </body>
+</html>

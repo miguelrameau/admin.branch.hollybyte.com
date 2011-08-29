@@ -1,0 +1,209 @@
+<div class="siteEdit">
+    <div class="assetlist-assetMenu">
+        <div class="assetlist-assetMenu-content">
+            <div class="assetEdit-stdcrumbs">
+                <div class="assetEdit-crumbs-before">
+                    SITE
+                </div>
+                <img src="/images/common/crumb.png" class="assetEdit-crumbs-crumb" />
+                <div class="assetEdit-crumbs-current"></div>
+            </div>
+        </div>
+    </div>
+    <div class="allUnderline">
+        <div class="site-edit-left">
+            <div class="site-edit-left-button">
+                <img id="siteSaveBtn" src="/images/common/save.png" />
+            </div>
+            <div class="site-edit-left-button">
+                <img id="siteClearBtn" src="/images/common/clear.png" />
+            </div>
+            <div class="site-edit-left-button">
+                <img id="siteBackBtn" src="/images/common/back.png" />
+            </div>
+        </div>
+        <div class="site-edit-content">
+            <div id="siteTabs">
+                <ul>
+                    <li>
+                        <a href="#siteGeneralTab">GENERAL</a>
+                    </li>
+                    <li>
+                        <a href="#siteChannelsTab">CHANNELS</a>
+                    </li>
+                    <li>
+                        <a href="#siteAssetsTab">ASSETS</a>
+                    </li>
+                </ul>
+                <div id="siteGeneralTab">
+                    <form id="siteForm">
+                        <div id="id-box" class="form-field-box">
+                            <div class="form-field-label">
+                                NAME*
+                            </div>
+                            <span id="siteIdTxt"></span>
+                            <input id="siteId" name="siteId" class="form-field-input" />
+                        </div>
+                        <div class="form-field-box">
+                            <div class="form-field-label">
+                                REGION
+                            </div>
+                            <span id="siteRegionTxt"></span>
+                            <input type="hidden" id="siteRegion" name="siteRegion" />
+                        </div>
+                        <div class="form-field-box">
+                            <div class="form-field-label">
+                                DOMAIN
+                            </div>
+                            <span id="siteDomainTxt"></span>
+                            <input type="hidden" id="siteDomain" name="siteDomain" />
+                        </div>
+                        <div class="form-field-box">
+                            <div class="form-field-label">
+                                PLAYLIST*
+                            </div>
+                            <span id="sitePlaylistTxt"></span>
+                            <select id="sitePlaylist" name="sitePlaylist" class="form-field-listbox">
+                                <option value="">Select One</option>
+                            </select>
+                        </div>
+                        <div class="form-field-box">
+                            <div class="form-field-label">
+                                GOOGLE ANALITICS UA
+                            </div>
+                            <input id="siteGaUa" name="siteGaUa" class="form-field-input" />
+                        </div>
+                        <div class="form-field-box">
+                            <div class="form-field-label">
+                                GOOGLE VERIFICATION CODE
+                            </div>
+                            <input id="siteGVC" name="siteGVC" class="form-field-input" />
+                        </div>
+                        <div class="form-field-box">
+                            <div class="form-field-label">
+                                ALIAS (CNAME)
+                            </div>
+                            <input id="siteAlias" name="siteAlias" class="form-field-input" />
+                        </div>
+                    </form>
+                </div>
+                <div id="siteChannelsTab">
+                    <div id="siteChannelsDiv">
+                        <img id="siteChannelAddBtn" src="/images/common/add.png" />
+                        <table id="siteChannelsTable" class="display" border="0" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>NAME</th>
+                                    <th>TITLE</th>
+                                    <th>DESCRIPTION</th>
+                                    <th>TEMPLATE</th>
+                                    <th>EDIT/DELETE</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="clear"></div>
+                    </div>
+                    <div id="siteChannelDiv">
+                        <form id="siteChannelForm">
+                            <div class="form-field-box">
+                                <div class="form-field-label">
+                                    NAME*
+                                </div>
+                                <span id="siteChannelNameTxt"></span>
+                                <input id="siteChannelName" name="siteChannelName" class="form-field-input" />
+                            </div>
+                            <div class="form-field-box">
+                                <div class="form-field-label">
+                                    TITLE*
+                                </div>
+                                <input id="siteChannelTitle" name="siteChannelTitle" class="form-field-input" />
+                            </div>
+                            <div class="form-field-box">
+                                <div class="form-field-label">
+                                    DESCRIPTION*
+                                </div>
+                                <textarea id="siteChannelDescription" name="siteChannelDescription" class="form-field-textarea"></textarea>
+                            </div>
+                            <div class="form-field-box">
+                                <div class="form-field-label">
+                                    TEMPLATE*
+                                </div>
+                                <select id="siteChannelTemplate" name="siteChannelTemplate" class="form-field-listbox">
+                                    <option value="fullscreen">Full Screen</option>
+                                </select>
+                            </div>
+                            <div class="form-field-box">
+                                <div class="form-field-label">
+                                    PLAYERS*
+                                </div>
+                                <select id="siteChannelPlayers" name="siteChannelPlayers" class="form-field-listbox" multiple="multiple" size="3" title="Please add a player"></select>
+                            </div>
+                            <div class="form-field-box">
+                                <div class="form-field-label">
+                                    FILTER DEVICES
+                                </div>
+                                <select id="siteChannelDevices" name="siteChannelDevices" class="form-field-listbox" multiple="multiple" size="5"  title="Please add a filter device">
+                                    <option value="desktop">Desktop</option>
+                                    <option value="iphone">IPhone</option>
+                                    <option value="ipad">IPad</option>
+                                    <option value="android">Android</option>
+                                    <option value="android-tablet">Android Tablet</option>
+                                    <option value="mobile">Mobile</option>
+                                </select>
+                            </div>
+                            <div class="site-channel-buttons">
+                                <img id="siteChannelSaveBtn" src="/images/common/save.png" />
+                                <img id="siteChannelClearBtn" src="/images/common/clear.png" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="siteAssetsTab">
+                    <div id="siteAssetsDiv">
+                        <form id="siteAssetsForm">
+                            <table id="siteAssetsTable" class="display" border="0" cellpadding="0" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>NAME</th>
+                                        <th>TITLE</th>
+                                        <th>CHANNELS</th>
+                                        <th>PUBLISH</th>
+                                        <th>ID</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div id="siteChannelSocialDialog">
+    <textarea class="form-field-textarea" id="txtSocial" style="width:100%; height:150px;"></textarea>
+</div>
+<div id="siteChannelEmbedDialog">
+    <textarea class="form-field-textarea" id="txtEmbed" style="width:100%; height:160px;"></textarea>
+</div>
+<div id="siteChannelDeleteDialog">
+    <p>
+        <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?
+    </p>
+</div>
+<script type="text/javascript" charset="utf-8">
+$(document).ready( function() {
+<?php if(isset($this->entity)): ?>var entity = jQuery.parseJSON('<?php echo json_encode($this->entity) ?>');<?php else:?>
+    var entity = {};
+
+<?php endif;?>
+HB2.admin.site.account = <?php echo json_encode($this -> account);?>;
+HB2.admin.site.region = <?php echo json_encode($this -> region);?>
+    ;
+    HB2.admin.site.init();
+    HB2.admin.site.load();
+    HB2.admin.site.setData(entity);
+    });
+</script>

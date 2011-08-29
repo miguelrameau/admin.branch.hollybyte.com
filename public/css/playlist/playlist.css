@@ -1,0 +1,305 @@
+.all {
+    position: relative;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+.clear {
+    clear: both;
+}
+/* INDEX */
+
+.hb-playlist-top {
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+.hb-playlist-content {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.hb-playlist-menu {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #999999;
+}
+.hb-playlist-path {
+    position: relative;
+    float: left;
+    width: 600px;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 12px;
+    
+}
+.hb-playlist-menu-btn {
+    float: right;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 250px;
+    height: 27px;
+    margin-top: 10px;
+}
+.hb-playlist-left {
+    position: relative;
+    width: 250px;
+    float: left;
+    margin-top: 10px;
+    background-color: #F2F2F2;
+}
+.hb-playlist-left-table {
+    width: 230px;
+    position: relative;
+    margin-left: 20px;
+}
+.hb-playlist-right {
+    width: 730px;
+    margin-top: 10px;
+    position: relative;
+    float: right;
+}
+.hb-playlist-right-tabs {
+    position: relative;
+    height: 35px;
+    overflow: hidden;
+    width: 100%;
+    /*border-top: 5px solid #EBEBEB;*/
+    /*padding-right: 16px;*/
+    background-color: #F7F7F7;
+    /*border-bottom: 1px solid #CCCCCC;*/
+     margin-bottom:0px;
+}
+.hb-playlist-right-tabs img {
+    float: left;
+    top: 0px;
+    position: relative;
+    margin-right: 4px;
+}
+.hb-playlist-right-tabs-Sel {
+    width: auto;
+    position: relative;
+    float: left;
+    background-color: #EBEBEB;
+    color: #2A2A2A;
+    cursor: pointer;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 1px solid #EBEBEB;
+    overflow: hidden;
+    height:35px;
+}
+.hb-playlist-right-tabs-nSel {
+    width: auto;
+    position: relative;
+    float: left;
+    background-color: #C1C1C1;
+    color: #2A2A2A;
+    border-top: 1px solid #EBEBEB;
+    border-right: 1px solid #EBEBEB;
+    /*border-bottom: 1px solid #C1C1C1;*/ 
+    font-size: 12px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+     overflow: hidden;
+}
+.hb-playlist-right-form {
+    background: #EBEBEB;
+    width: 100%;
+    /*padding-left: 2.5%;
+    padding-right: 2.5%;*/
+    position: relative;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    /*padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+}
+.hb-playlist-tab-general {
+    display: block;
+}
+.hb-playlist-tab-asset {
+    display: none;
+}
+.hb-playlist-tab-metadata {
+    display: none;
+}
+/* GENERAL */
+
+.hb-playlist-form-data {
+    position: relative;
+    width: 100%;
+    clear: both;
+    margin-bottom: 15px;
+    /*padding-left: 5px;*/
+}
+.hb-playlist-form-name {
+    position: relative;
+    width: 320px;
+    float: left;
+    margin-right: 15px;
+}
+.hb-playlist-form-name input {
+    /*padding: 5px;*/
+    height: 15px;
+    width: 95%;
+    height: 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.label {
+    color: #B8B8B8;
+    font-size: 12px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.hb-playlist-form-txtarea {
+    position: relative;
+    width: 672px;
+    margin-right: 15px;
+    clear: both;
+}
+.hb-playlist-form-txtarea textarea {
+    /*padding: 5px;*/
+    width: 95%;
+    height: 55px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    max-width: 95%;
+}
+.hb-playlist-general-bottom {
+    position: relative;
+    width: 100%;
+    height: 125px;
+    clear: both;
+    margin-bottom: 15px;
+    /*padding-left: 5px;*/
+}
+.hb-playlist-Splash {
+    float: left;
+    width: 215px;
+    height: 125px;
+    position: relative;
+    margin-left: 10px;
+}
+.hb-playlist-upload {
+    float: left;
+    width: auto;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 55px;
+}
+.hb-playlist-date-label {
+    position: relative;
+    width: 170px;
+    height: 30px;
+    float: left;
+    margin-right: 18px;
+}
+.hb-playlist-date {
+    position: relative;
+    width: 120px;
+    height: 30px;
+    float: left;
+    margin-right: 18px;
+}
+/* METADATA */
+
+/* Va a ir en common */
+
+/* ASSETS */
+
+.hb-playlist-asset {
+    background: #EBEBEB;
+    width: 99.1%;
+    height: 340px;
+    position: relative;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+}
+.hb-playlist-asset-line {
+    height: 35px;
+    width: 100%;
+    position: relative;
+}
+.hb-playlist-asset-menu {
+    height: 40px;
+    position: relative;
+    width: 100%;
+}
+.hb-playlist-asset-menu-label {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    top: 7px;
+    color: #B8B8B8;
+    font-size: 14px;
+}
+.hb-playlist-asset-actions {
+    position: relative;
+    float: left;
+    width: auto;
+    /*padding-bottom: 10px;*/
+}
+.hb-playlist-asset-actions button {
+    width: 34px;
+    height: 28px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    border: none;
+}
+.hb-playlist-asset-add {
+    position: relative;
+    background-image: url(../images/assetedit/btn_add.png);
+    width: 70px;
+    height: 30px;
+    float: left;
+    margin-left: 5px;
+    top: 2px;
+}
+.hb-playlist-asset-actions-top {
+    background-image: url(../images/program/arrowtop.png);
+}
+.hb-playlist-asset-actions-up {
+    background-image: url(../images/program/arrowup.png);
+}
+.hb-playlist-asset-actions-down {
+    background-image: url(../images/program/arrowdown.png);
+}
+.hb-playlist-asset-actions-bottom {
+    background-image: url(../images/program/arrowbottom.png);
+}
+
+
+/* DATATABLE */
+#assetTable tr.odd {
+    background-color: #FFFFFF;
+}
+#assetTable tr.even {
+    background-color: #EDEDED;
+}
+#assetTable_wrapper {
+    margin-top: 25px;
+}
+#addAssetTable_filter {
+    margin-bottom: 25px;
+}

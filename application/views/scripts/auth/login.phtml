@@ -1,0 +1,46 @@
+<div class="anonymous-wrapper">
+    <div class="anonymous-all">
+        <div class="anonymous-login">
+            <div class="anonymous-login-content">
+                <img src="/images/anonymous/login-title.png" />
+                <div class="anonymous-login-content-text">
+                    Login with
+                </div>
+                <form id="authLogin" action="/auth/login">
+                    <input type="hidden" id="openid_identifier" name="openid_identifier" />
+                    <div class="anonymous-login-content-buttons">
+                        <img id="google" src="/images/anonymous/btn_google.png" />
+                        <!--<img id="facebook" src="/images/anonymous/btn_facebook.png" />
+                        <img id="twitter" src="/images/anonymous/btn_twitter.png" />-->
+                        <img id="hollybyte" src="/images/anonymous/btn_hollybyte.png" />
+                    </div>
+                </form>
+                
+                 <!--<div class="anonymous-login-content-text">
+                    ...or
+                </div>
+                <a href="/auth/registry"><img src="/images/anonymous/btn_register.png" class="anonymous-login-content-register"/></a>-->
+            </div><!--cierre anonymous-login-content-->
+        </div><!--cierre anonymous-login-->
+    </div> <!-- cierre home-all -->
+</div> <!-- cierre home-wrapper -->
+<script type="text/javascript" charset="utf-8">
+    $(document).ready( function() {
+        $('#google').click(function () {
+            $('#openid_identifier').val('https://www.google.com/accounts/o8/id');
+            $('#authLogin')[0].submit();
+        });
+        $('#facebook').click(function () {
+            $('#openid_identifier').val('https://www.facebook.com');
+            $('#authLogin')[0].submit();
+        });
+        $('#twitter').click(function () {
+            $('#openid_identifier').val('https://www.twitter.com');
+            $('#authLogin')[0].submit();
+        });
+        $('#hollybyte').click(function () {
+            $('#openid_identifier').val('https://openid.hollybyte.com');
+            $('#authLogin')[0].submit();
+        });
+    });
+</script>

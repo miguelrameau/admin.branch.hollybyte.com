@@ -1,0 +1,35 @@
+.HB-wrapper{
+    position:relative;
+    width:100%;
+    clear:both;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.HB-All{
+    position:relative;
+    width:980px;
+    margin-left:auto;
+    margin-right:auto;
+    clear:both;
+}
+
+.HB-Player-Edit-Tabs {
+    position:relative;
+    margin-top:30px;
+}
+
+.HB-Player-Edit-Tabs ul{
+    position:relative;
+    margin-top:30px;
+}
+.HB-Player-Edit-Buttons {
+    position:relative;
+    height:45px;
+    width:195px;
+    top:-50px;
+    margin-right:9px;
+    background:url(../images/player/bkg_btns.png) no-repeat;
+    float:right;
+}
+

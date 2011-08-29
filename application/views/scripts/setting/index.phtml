@@ -1,0 +1,125 @@
+<div id="setting">
+    <div class="breadcrumbs">
+        <div class="breadcrumbs-content">
+            <div class="breadcrumbs-crumbs">
+                <div class="breadcrumbs-crumbs-title">
+                    SETTINGS
+                </div>
+                <img src="/images/common/crumb.png" class="breadcrumbs-crumbs-img" />
+                <div class="breadcrumbs-crumbs-current"></div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-left">
+            <div class="content-left-button">
+                <img id="settingSave" src="/images/common/save.png" />
+            </div>
+            <div class="content-left-button">
+                <img id="settingClear" src="/images/common/clear.png" />
+            </div>
+            <div class="content-left-button">
+                <img id="settingBack" src="/images/common/back.png" />
+            </div>
+        </div>
+        <div class="content-rigth">
+            <div id="settingTabs">
+                <ul>
+                    <?php if(!empty($this->acl->resources["admin-settings-btn-general"])):
+                    ?>
+                    <li>
+                        <a href="#settingGeneralTab">GENERAL</a>
+                    </li>
+                    <?php endif;?>
+                    <?php if(!empty($this->acl->resources["admin-settings-btn-groups"])):
+                    ?>
+                    <li>
+                        <a href="#settingGroupsTab">GROUPS</a>
+                    </li>
+                    <?php endif;?>
+                </ul>
+                <form id="settingForm">
+                    <?php if(!empty($this->acl->resources["admin-settings-btn-general"])):
+                    ?>
+                    <div id="settingGeneralTab">
+                        <div class="form-field-box">
+                            <div class="form-field-label">
+                                NAME*
+                            </div>
+                            <span id="settingId"></span>
+                        </div>
+                        <div class="form-field-box">
+                            <div class="form-field-label">
+                                REGION*
+                            </div>
+                            <span id="settingRegion"></span>
+                        </div>
+                    </div>
+                    <?php endif;?>
+                    <?php if(!empty($this->acl->resources["admin-settings-btn-groups"])):
+                    ?>
+                    <div id="settingGroupsTab">
+                        <img id="addGroup" src="images/common/add.png" />
+                        <table id="settingGroupsTable" class="display">
+                            <thead>
+                                <tr>
+                                    <th>TYPE</th>
+                                    <th>NAME</th>
+                                    <th>DEFAULT</th>
+                                    <th>MEDIAS</th>
+                                    <th>EDIT/DELETE</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <?php endif;?>
+                </form>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="groupEditDialog">
+    <form id="settingGroupForm">
+        <div class="form-field-box">
+            <div class="form-field-label">
+                TYPE*
+            </div>
+            <select id="settingGroupType" name="settingGroupType" class="form-field-listbox">
+                <option value="VIDEO">VIDEO</option>
+                <option value="AUDIO">AUDIO</option>
+                <option value="IMAGE">IMAGE</option>
+            </select>
+        </div>
+        <div class="form-field-box">
+            <div class="form-field-label">
+                NAME*
+            </div>
+            <input id="settingGroupName" name="settingGroupName" class="form-field-input" />
+        </div>
+        <div class="form-field-box">
+            <div class="form-field-label">
+                DEFAULT MEDIA*
+            </div>
+            <select id="settingGroupDefaultMedia" name="settingGroupDefaultMedia" class="form-field-listbox"></select>
+        </div>
+        <div class="form-field-box">
+            <div class="form-field-label">
+                MEDIAS*
+            </div>
+            <select id="settingGroupMedias" name="settingGroupMedias" multiple="multiple" size="5" class="form-field-listbox"></select>
+        </div>
+    </form>
+</div>
+<div id="groupDeleteDialog">
+    <p>
+        <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>This item will be permanently deleted and cannot be recovered. Are you sure?
+    </p>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        HB2.admin.setting.init();
+        HB2.admin.setting.load();
+    });
+
+</script>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ApplicationManifest xmlns="http://schemas.google.com/ApplicationManifest/2009">
+    <!-- Support info to show in the marketplace & control panel -->
+    <Support>
+        <!-- URL explaining how customers get support. -->
+        <Link rel="setup" href="https://admin.hollybyte.com/auth/market?domain=${DOMAIN_NAME}" />
+        <Link rel="support" href="http://admin.hollybyte.com/auth/login" />
+    </Support>
+    <!-- Name and description pulled from message bundles -->
+    <Name>Hollybyte Admin</Name>
+    <Description>Hollybyte Admin</Description>
+    <!-- Show this link in Google's universal navigation for all users -->
+    <Extension id="navLink" type="link">
+        <Name>HollybyteTest</Name>
+        <Url>https://admin.hollybyte.com/auth/registry?from=google&amp;domain=${DOMAIN_NAME}</Url>
+        <!-- This app also uses the Calendar API -->
+    </Extension>
+    <!-- Declare our OpenID realm so our app is white listed -->
+    <Extension id="realm" type="openIdRealm">
+        <Url>http://admin.hollybyte.com/</Url>
+    </Extension>
+    <!-- Need access to the Calendar feed -->
+    <Scope id="userFeed">
+        <Url>https://apps-apis.google.com/a/feeds/user/#readonly</Url>
+        <Reason>This application required user email.</Reason>
+    </Scope>
+</ApplicationManifest>

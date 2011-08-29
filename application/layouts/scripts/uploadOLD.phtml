@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Hollybyte Upload</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/css/fileupload/jquery.fileupload-ui.css">
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/base/jquery-ui.css" id="theme">
+
+        <script src="/js/css_browser_selector.js"></script>
+
+        <script src="https://www.google.com/jsapi?key=ABQIAAAAXMoM_3yd1lBD_9AvFRvTcxR0SRroG4EB8hARaXhl-jHMO2igqBS617GOTfedTVY-Ml6-wK5hN8Gx4w" type="text/javascript"></script>
+        <script language="Javascript" type="text/javascript">
+            google.load("jquery", "1.6.1");
+            google.load("jqueryui", "1.8.13");
+        </script>
+
+        <script src="//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+        <script src="/js/fileupload/jquery.iframe-transport.js"></script>
+        <script src="/js/fileupload/jquery.fileupload.js"></script>
+        <script src="/js/fileupload/jquery.fileupload-ui.js"></script>
+
+        <script type="text/javascript" charset="utf-8">
+            $(document).ready( function() {
+                $('#fileupload').fileupload();
+
+                $('#fileupload').bind('fileuploaddone', function (e, data) {
+                    for (i in data.files) {
+                        console.log(data);
+                        file = data.files[i].name;
+                        $.ajax({
+                            url: '/upload/asset',
+                            data: 'file='+file,
+                            async: false,
+                            dataType: 'json',
+                            success: function(data, textStatus, jqXHR) {
+                                console.log(data.result);
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.info(textStatus);
+                                console.info(errorThrown);
+                            }
+                        } );
+                    }
+                });
+                // Load existing files:
+                $.getJSON($('#fileupload form').prop('action'), function (files) {
+                    var fu = $('#fileupload').data('fileupload');
+                    fu._adjustMaxNumberOfFiles(-files.length);
+                    fu._renderDownload(files)
+                    .appendTo($('#fileupload .files'))
+                    .fadeIn( function () {
+                        // Fix for IE7 and lower:
+                        $(this).show();
+                    });
+                });
+                // Open download dialogs via iframes,
+                // to prevent aborting current uploads:
+                $('#fileupload .files a:not([target^=_blank])').live('click', function (e) {
+                    e.preventDefault();
+                    $('<iframe style="display:none;"></iframe>')
+                    .prop('src', this.href)
+                    .appendTo('body');
+                });
+            } );
+        </script>
+        <?php echo $this->headScript()
+        ?>
+    </head>
+    <body>
+
+        <?php echo $this->layout()->content
+        ?>
+    </body>
+</html>

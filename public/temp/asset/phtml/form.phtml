@@ -1,0 +1,86 @@
+<div class="wrapper">
+    <div class="all">
+        <div class="assetEdit">
+            <div class="hb-assetform-crumbs">
+                <div class="hb-assetform-crumbs-before">
+                    EDIT ASSET / GENERAL INFO
+                </div>
+                <img src="/images/common/crumb.png" class="hb-assetform-crumbs-crumb" alt="Image" />
+                <div class="hb-assetform-crumbs-current">
+                    VIDEO ACTUAL
+                </div>
+            </div><!-- cierre assetEdit-crumbs -->
+            <div class="hb-assetform-tabTable">
+                <div class="hb-assetform-tabTable-left">
+                    <div class="hb-assetform-tabTable-left-tabs">
+                        <?php if(!empty($this->acl->resources["admin-asset-edit-tab-general"])):
+                        ?>
+                        <div id="tabGeneral" class="hb-assetform-tabTable-left-tabs-generalOn"></div>
+                        <?php endif;?>
+
+                        <?php if(!empty($this->acl->resources["admin-asset-edit-tab-tag"])):
+                        ?>
+                        <div id="tabTags" class="hb-assetform-tabTable-left-tabs-tags"></div>
+                        <?php endif;?>
+                        <?php if(!empty($this->acl->resources["admin-asset-edit-tab-metadata"])):
+                        ?>
+                        <div id="tabMetadata" class="hb-assetform-tabTable-left-tabs-metadata"></div>
+                        <?php endif;?>
+                        <?php if(!empty($this->acl->resources["admin-asset-edit-tab-encoding"])):
+                        ?>
+                        <div id="tabProfiles" class="hb-assetform-tabTable-left-tabs-profiles"></div>
+                        <?php endif;?>
+                        <?php if(!empty($this->acl->resources["admin-asset-edit-tab-group"])):
+                        ?>
+                        <div id="tabPublish" class="hb-assetform-tabTable-left-tabs-publish"></div>
+                        <?php endif;?>
+                        <?php if(!empty($this->acl->resources["admin-asset-edit-tab-subtitle"])):
+                        ?>
+                        <div id="tabSubtitles" class="hb-assetform-tabTable-left-tabs-subtitles"></div>
+                        <?php endif;?>
+                        <?php if(!empty($this->acl->resources["admin-asset-edit-tab-youtube"])):
+                        ?>
+                        <div id="tabYoutube" class="hb-assetform-tabTable-left-tabs-youtube"></div>
+                        <?php endif;?>
+                    </div><!-- cierre assetEdit-tabTable-left-tabs -->
+                    <div class="hb-assetform-tabTable-left-options">
+                        <?php if(!empty($this->acl->resources["admin-asset-edit-btn-save"])):
+                        ?>
+                        <button class="hb-assetform-tabTable-left-options-save" type="button" id="assetSave"></button>
+                        <button class="hb-assetform-tabTable-left-options-clear" type="button" id="assetClear"></button>
+                        <?php endif;?>
+                        <button class="hb-assetform-tabTable-left-options-back" type="button" id="assetBack"></button>
+                    </div>
+                </div><!-- cierre assetEdit-tabTable-left -->
+                <div class="hb-assetform-tabTable-right">
+                    <form name="assetForm" id="assetForm" action="/upload/file" method="POST" enctype="multipart/form-data">
+                        <?php echo $this->render('asset/form/general.phtml');?>
+
+                        <div class="clear"></div>
+                        <?php echo $this->render('asset/form/tags.phtml');?>
+                    </form>
+                    <div class="clear"></div>
+                    <?php echo $this->render('asset/form/publish.phtml');?>
+                    <div class="clear"></div>
+                    <?php echo $this->render('asset/form/metadata.phtml');?>
+                    <div class="clear"></div>
+                    <?php echo $this->render('asset/form/profile.phtml');?>
+                    <div class="clear"></div>
+                    <?php echo $this->render('asset/form/subtitles.phtml');?>
+                    <div class="clear"></div>
+                    <?php echo $this->render('asset/form/youtube.phtml');?>
+                    <div class="clear"></div>
+                </div><!-- cierre assetEdit-tabTable-right -->
+            </div>
+            <div class="clear"></div>
+        </div><!-- cierre assetEdit -->
+        <div class="clear"></div>
+    </div><!-- cierre all -->
+</div><!-- cierre wrapper -->
+<script type="text/javascript" charset="utf-8">
+$(document).ready( function() {
+var entity = <?php echo json_encode($this->entity);?>
+    ;
+    HB2.admin.asset.init(entity);
+    });
+</script>

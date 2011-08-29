@@ -1,0 +1,157 @@
+adminAcl:{
+    modules:{
+           asset:{
+                enabled:false,
+                list:{
+                    maxvalues:0,
+                    actions:{
+                        read:false,
+                        delete:false
+                    }
+                   
+                },
+                form:{
+                    tabs:{
+                        general:false,
+                        tag:false,
+                        metadata:false,
+                        encoding:false,
+                        group:false,
+                        subtitle:false,
+                    },
+                    actions:{
+                        update:false,
+                    }
+                }
+                
+                
+           },
+           
+           program:{
+                enabled:false,
+                list:{
+                    maxvalues:0,
+                    maxlevel:0,
+                    tabs:{
+                        general:false,
+                        metadata:false,
+                        asset:false
+                    }
+                    actions:{
+                        create:false,
+                        update,
+                        delete:false      
+                    }
+                }
+           },
+           
+           player:{
+                enabled:false,
+                list:{
+                    maxvalues:0,
+                    actions:{
+                        create:false,
+                        read:false,
+                        delete:false
+                    }
+                },
+                form:{
+                    type:simple,
+                    actions:{
+                        update:false
+                    }
+                }   
+           },
+           
+           site:{
+                enabled:false,
+                list:{
+                    maxvalues:0,
+                    actions:{
+                        create:false,
+                        read:false,
+                        delete:false
+                    }
+                }
+                form:{
+                    tabs:{
+                        general:false,
+                        channel:false,
+                        asset:{
+                            enabled:false,
+                            maxvalues:0
+                        }
+                    }
+                    actions:{
+                        update:false
+                    }
+                }
+           },
+           
+           process:{
+                enabled:false       
+           },
+           
+           connector:{
+                enabled:false,
+                 list:{
+                    maxvalues:0,
+                    actions:{
+                        create:false,
+                        read:false,
+                        delete:false
+                    },
+                    form:{
+                       types:{
+                            facebook:false,
+                            ftp:false,
+                            twitter:false,
+                            youtube:false
+                       },
+                       actions:{
+                            update:false
+                       }
+                    }
+                   
+           },
+           
+           setting:{
+                enabled:false,
+                tabs:{
+                    general:false,
+                    groups:{
+                        list:{
+                            maxvalues:0,
+                            actions:{
+                                create:false,
+                                read:false,
+                                delete:false
+                            }
+                        }
+                        form:{
+                            types:{
+                                video:false,
+                                image:false,
+                                audio:false
+                            },
+                            actions:{
+                                create:false
+                            }
+                        }
+                        
+                    }
+                }
+                actions:{
+                    update:false
+                }
+           },
+           
+           upload:{
+                enabled:false,
+                maxFileSize:0,
+                maxUploads:0
+           }
+           
+     }
+    
+}

@@ -1,0 +1,51 @@
+<form action="upload/file" method="POST" enctype="multipart/form-data">
+    <div id="uploader" style="width: 575px; height: 330px;">
+        You browser doesn't have HTML5, FLASH or HTML4 support.
+    </div>
+</form>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        var flag = false;
+        var runtime = false;
+        // Setup
+        $("#uploader").pluploadQueue({
+            runtimes : 'flash, html5, html4',
+            //url : 'upload/asset?PHPSESSID='+session,
+            url : 'upload/asset',
+            max_file_size : '2048mb',
+            unique_names : true,
+            flash_swf_url : '/js/plupload/plupload.flash.swf',
+            urlstream_upload : true,
+            //multiple_queues: true,
+            preinit : {
+                Init : function(up, info) {
+                    console.info('[preInit] runtime: ' + up.runtime);
+                    if(up.runtime == 'html4' || up.runtime == 'flash') {
+                        runtime = true;
+                    }
+                },
+            },
+            // Post init events, bound after the internal events
+            init : {
+                FileUploaded : function(up, file, info) {
+                    // Called when a file has finished uploading
+                    console.info('Upload: ' + up);
+                    console.info('[FileUploaded] File:', file, "Info:", info);
+                    console.info('response: ' + info.response);
+                },
+                StateChanged : function(up) {
+                    console.info('State: ' + up.state);
+                    if(runtime && !flag && up.state == plupload.STARTED) {
+                        $('#loading-wrapper').show();
+                        flag = true;
+                    }
+                    if(runtime && flag && up.state == plupload.STOPPED) {
+                        $('#loading-wrapper').hide();
+                        flag = false;
+                    }
+                }
+            }
+        });
+    });
+</script>
